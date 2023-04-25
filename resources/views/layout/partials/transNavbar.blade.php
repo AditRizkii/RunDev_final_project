@@ -126,7 +126,7 @@
                             @if (Route::has('register'))
                                 <div class="nav-item my-auto ms-3 ms-lg-0">
                                     <a href="{{ route('register') }}"
-                                        class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Register</a>
+                                        class="btn btn-sm  bg-white text-dark  btn-round mb-0 me-1 mt-2 mt-md-0">Register</a>
                                 </div>
                             @endif
                         @endauth
