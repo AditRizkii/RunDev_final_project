@@ -53,7 +53,7 @@
   <!-- -------- END Features w/ pattern background & stats & rocket -------- -->
 
   <!-- -------- START PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
-  <section class="my-5 pt-5">
+  <section class="-mt-5 pt-5 bg-gray-100">
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto">
@@ -82,7 +82,7 @@
     </div>
   </section>
   <!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
-  <footer class="footer pt-5 mt-5">
+  <footer class="footer pt-5 bg-gray-100">
     <hr class="horizontal dark mb-5">
     <div class="container">
       <div class=" row">
@@ -224,7 +224,7 @@
             <p class="my-4 text-sm">
               All rights reserved. Copyright © <script>
                 document.write(new Date().getFullYear())
-              </script> Soft UI Design System by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+              </script> Soft UI Design System by <span class="text-info">RunDev</span>.
             </p>
           </div>
         </div>

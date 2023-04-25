@@ -19,9 +19,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-8 mb-5 mt-5 text-center">
-                <h3 class="text-white z-index-1 position-relative">Our Team</h3>
-                <p class="text-white opacity-8 mb-0">There’s nothing I really wanted to do in life that I wasn’t able to
-                    get good at. That’s my skill.</p>
+                <h3 class="text-white fs-1 fw-bolder z-index-1 position-relative">Our Team</h3>
             </div>
         </div>
         <div class="row">
@@ -69,26 +67,6 @@
         </div>
         <div class="row mt-4">
             <div class="col-lg-6 col-12">
-                <div class="card card-profile overflow-hidden z-index-2">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
-                            <a href="javascript:;">
-                                <div class="p-3 pe-md-0">
-                                    <img class="w-100 border-radius-md" src="../assets/img/team-4.jpg" alt="image">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                            <div class="card-body">
-                                <h5 class="mb-0">Sofia</h5>
-                                <h6 class="text-info">Back-end Developer</h6>
-                                <p>Informatika USK<br>2108107010006</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
                 <div class="card card-profile mt-lg-0 mt-5 overflow-hidden z-index-2">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
@@ -109,8 +87,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-4">
             <div class="col-lg-6 col-12">
                 <div class="card card-profile overflow-hidden z-index-2">
                     <div class="row">
@@ -123,14 +99,16 @@
                         </div>
                         <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
                             <div class="card-body">
-                                <h5 class="mb-0">Tyara Raynasari</h5>
-                                <h6 class="text-info">UI/UX Designer</h6>
-                                <p>Informatika USK<br>2108107010030</p>
+                                <h5 class="mb-0">Sofia</h5>
+                                <h6 class="text-info">Back-end Developer</h6>
+                                <p>Informatika USK<br>2108107010006</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row mt-4">
             <div class="col-lg-6 col-12">
                 <div class="card card-profile mt-lg-0 mt-5 overflow-hidden z-index-2">
                     <div class="row">
@@ -147,6 +125,26 @@
                                 <h5 class="mb-0">T.Rifal Aulia</h5>
                                 <h6 class="text-info">Front-end Developer</h6>
                                 <p>Informatika USK<br>2108107010064</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="card card-profile overflow-hidden z-index-2">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                            <a href="javascript:;">
+                                <div class="p-3 pe-md-0">
+                                    <img class="w-100 border-radius-md" src="../assets/img/team-4.jpg" alt="image">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                            <div class="card-body">
+                                <h5 class="mb-0">Tyara Raynasari</h5>
+                                <h6 class="text-info">UI/UX Designer</h6>
+                                <p>Informatika USK<br>2108107010030</p>
                             </div>
                         </div>
                     </div>

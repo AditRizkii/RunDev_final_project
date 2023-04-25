@@ -22,8 +22,8 @@
                       </g>
                     </svg>
                   </div>
-                  <h5>Kirim Surat ORMAWA</h5>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eos quod dolor provident.</p>
+                  <h5 class="">Kirim Surat ORMAWA</h5>
+                  <p>Memudahkan pengiriman surat antar Ormawa</p><br/>
                 </div>
               </div>
               <div class="col-md-6">
@@ -44,8 +44,8 @@
                       </g>
                     </svg>
                   </div>
-                  <h5>Forums chat</h5>
-                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                  <h5>Forum diskusi</h5>
+                  <p></p>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@
                       </g>
                     </svg>
                   </div>
-                  <h5>Prebuilt components</h5>
+                  <h5 class="">Info Event</h5>
                   <p>We get insulted by others, lose trust for those We get back freezes</p>
                 </div>
               </div>
@@ -91,7 +91,7 @@
                     </svg>
                   </div>
                   <h5>Chat antar ORMAWA</h5>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eos quod dolor provident.</p>
+                  <p>Memudahkan Ormawa untuk saling berdiskusi</p>
                 </div>
               </div>
             </div>
