@@ -52,48 +52,6 @@
   @include('layout.partials.teamSection')
   <!-- -------- END Features w/ pattern background & stats & rocket -------- -->
 
-  <section class="pt-2 pb-6 bg-gray-100" id="count-stats">
-    <div class="container">
-      <div class="row mb-7">
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-coinbase.svg" alt="logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-nasa.svg" alt="logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-netflix.svg" alt="logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-pinterest.svg" alt="logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-spotify.svg" alt="logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-vodafone.svg" alt="logo">
-        </div>
-      </div>
-      <div class="row justify-content-center text-center">
-        <div class="col-md-3">
-          <h1 class="text-gradient text-info" id="state1" countTo="5234">0</h1>
-          <h5>Projects</h5>
-          <p>Of “high-performing” level are led by a certified project manager</p>
-        </div>
-        <div class="col-md-3">
-          <h1 class="text-gradient text-info"><span id="state2" countTo="3400">0</span>+</h1>
-          <h5>Hours</h5>
-          <p>That meets quality standards required by our users</p>
-        </div>
-        <div class="col-md-3">
-          <h1 class="text-gradient text-info"><span id="state3" countTo="24">0</span>/7</h1>
-          <h5>Support</h5>
-          <p>Actively engage team members that finishes on time</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- -------- START PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
   <section class="my-5 pt-5">
     <div class="container">
