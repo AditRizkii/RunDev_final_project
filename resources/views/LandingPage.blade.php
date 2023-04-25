@@ -32,6 +32,7 @@
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/soft-design-system.css?v=1.0.9" rel="stylesheet" />
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="about-us">

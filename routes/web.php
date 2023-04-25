@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/s', function () {
+    return view('test');
+});
+
+
 Route::get('/home', function () {
     return view('LandingPage');
 });
