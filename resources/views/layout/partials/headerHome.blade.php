@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center mx-auto my-auto">
-                    <h1 class="text-white">Connect with all</h1>
+                    <h1 class="text-white mt-5 mb-2">Connect with all</h1>
                     <p class="lead mb-4 text-white opacity-8">OniiRoom merupakan aplikasi penghubung antar ORMAWA di
                         FMIPA USK dan juga sebagai forum diskusi mahasiswa FMIPA USK</p>
 
