@@ -25,7 +25,7 @@
             </li>
             <li class="nav-item">
                 {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}"> --}}
-                    <a class="nav-link" href="#">
+                    <a class="nav-link active" href="/ormawa">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <img src="assets/img/ormawa.svg" alt="ormawa" style="width: 25px; height:25px">
