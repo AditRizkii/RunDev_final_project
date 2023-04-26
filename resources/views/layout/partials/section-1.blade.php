@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="row justify-content-start">
+            <div class="row justify-content-start pl-16">
               <div class="col-md-6">
                 <div class="info">
                   <div class="icon icon-shape text-center">
@@ -22,8 +22,8 @@
                       </g>
                     </svg>
                   </div>
-                  <h5 class="">Kirim Surat ORMAWA</h5>
-                  <p>Memudahkan pengiriman surat antar Ormawa</p><br/>
+                  <h5 class="">Send a letter between ORMAWA</h5>
+                  <p>Sending letters with the easy method to the official site directly</p><br/>
                 </div>
               </div>
               <div class="col-md-6">
@@ -44,12 +44,12 @@
                       </g>
                     </svg>
                   </div>
-                  <h5>Forum diskusi</h5>
-                  <p></p>
+                  <h5>Discussion forums</h5>
+                  <p>Communicate with other ORMAWAs in a room chat</p>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-start">
+            <div class="row justify-content-start pl-16">
               <div class="col-md-6">
                 <div class="info">
                   <div class="icon icon-shape text-center">
@@ -68,8 +68,8 @@
                       </g>
                     </svg>
                   </div>
-                  <h5 class="">Info Event</h5>
-                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                  <h5 class="">Event Info</h5>
+                  <p>Publication of various events and information about their schedule</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -90,28 +90,28 @@
                       </g>
                     </svg>
                   </div>
-                  <h5>Chat antar ORMAWA</h5>
-                  <p>Memudahkan Ormawa untuk saling berdiskusi</p>
+                  <h5>Communication one-to-one between ORMAWA</h5>
+                  <p>Privacy communication features between one ORMAWA and others</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
+          <div class="col-lg-4 ms-auto mt-lg-0 mt-4 pr-16">
             <div class="card shadow-lg">
               <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
                 <div class="d-block blur-shadow-image">
-                  <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/funny.jpg" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
+                  <img src="https://images.bisnis.com/posts/2022/03/15/1510710/ilustrasi-membuat-surat-keterangan-waris.jpg" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
                 </div>
-                <div class="colored-shadow" style="background-image: url(&quot;https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/funny.jpg&quot;);"></div>
+                <div class="colored-shadow" style="background-image: url(&quot;https://images.bisnis.com/posts/2022/03/15/1510710/ilustrasi-membuat-surat-keterangan-waris.jpg&quot;);"></div>
               </div>
               <div class="card-body">
                 <a href="javascript:;">
                   <h5 class="mt-3">
-                    Get insights on Search
+                  Giving a letter by means of having to meet
                   </h5>
                 </a>
                 <p>
-                  Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards.
+                With this website, students can communicate online to save the time and efficiency.
                 </p>
               </div>
             </div>
