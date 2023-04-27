@@ -18,10 +18,13 @@ Route::get('/', function () {
     return view('LandingPage');
 });
 
+Route::get('/chat', function () {
+    return view('user.pages.chat');
+});
 
 Route::get('/home', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/ormawa', function () {
     return view('user.pages.ormawa');

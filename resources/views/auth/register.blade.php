@@ -4,7 +4,7 @@
     <div class="container position-sticky z-index-sticky top-0">
         <div class="row">
             <div class="col-12">
-                {{-- @include('user.navbar.guest.navbar') --}}
+                @include('user.navbar.login')
             </div>
         </div>
     </div>
@@ -24,29 +24,42 @@
                                     <form role="form" method="POST" action="{{ route('register') }}">
                                         @csrf
                                         <div class="flex flex-col mb-3">
-                                            <input required type="text" name="name" class="form-control" placeholder="Name"
-                                                aria-label="Name" value="{{ old('name') }}">
+                                            <input required type="text" name="name" class="form-control"
+                                                placeholder="Name" aria-label="Name" value="{{ old('name') }}">
                                             @error('name')
                                                 <p class='text-danger text-xs pt-1'> {{ $message }} </p>
                                             @enderror
                                         </div>
                                         <div class="flex flex-col mb-3">
-                                            <input required type="email" name="email" class="form-control form-control-lg"
-                                                value="{{ old('email') }}" aria-label="Email" placeholder="Email">
+                                            <input required type="email" name="email"
+                                                class="form-control form-control-lg" value="{{ old('email') }}"
+                                                aria-label="Email" placeholder="Email">
                                             @error('email')
                                                 <p class="text-danger text-xs pt-1"> {{ $message }} </p>
                                             @enderror
                                         </div>
                                         <div class="flex flex-col mb-3">
-                                            <input required type="password" name="password" class="form-control form-control-lg"
-                                                aria-label="Password" placeholder="Password">
+                                            <input required type="tel" name="npm"
+                                                class="form-control form-control-lg" value="{{ old('npm') }}"
+                                                aria-label="NPM" placeholder="NPM" required
+                                                pattern="[0-9]{12,13}">
+                                            @error('npm')
+                                                <p class="text-danger text-xs pt-1"> {{ $message }} </p>
+                                            @enderror
+                                        </div>
+                                        <div class="flex flex-col mb-3">
+                                            <input required type="password" name="password"
+                                                class="form-control form-control-lg" aria-label="Password"
+                                                placeholder="Password">
                                             @error('password')
                                                 <p class="text-danger text-xs pt-1"> {{ $message }} </p>
                                             @enderror
                                         </div>
                                         <div class="flex flex-col mb-3">
-                                            <input required id="password_confirmation" type="password" name="password_confirmation" class="form-control form-control-lg"
-                                                aria-label="Password" required placeholder="Confirm Password" autocomplete="new-password">
+                                            <input required id="password_confirmation" type="password"
+                                                name="password_confirmation" class="form-control form-control-lg"
+                                                aria-label="Password" required placeholder="Confirm Password"
+                                                autocomplete="new-password">
                                             @error('password')
                                                 <p class="text-danger text-xs pt-1"> {{ $message }} </p>
                                             @enderror
@@ -61,7 +74,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                
+
                                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                     <p class="mb-4 text-sm mx-auto">
                                         Already registered?
