@@ -4,7 +4,7 @@
     <div class="container position-sticky z-index-sticky top-0">
         <div class="row">
             <div class="col-12">
-                {{-- @include('user.navbar.guest.navbar') --}}
+                @include('user.navbar.login')
             </div>
         </div>
     </div>
@@ -24,11 +24,11 @@
                                         @csrf
                                         @method('post')
                                         <div class="flex flex-col mb-3">
-                                            <input type="email" name="email" class="form-control form-control-lg" value="{{ old('email') }}" aria-label="Email">
+                                            <input type="email" name="email" class="form-control form-control-lg" value="{{ old('email') }}" aria-label="Email" placeholder="Email">
                                             @error('email') <p class="text-danger text-xs pt-1"> {{$message}} </p>@enderror
                                         </div>
                                         <div class="flex flex-col mb-3">
-                                            <input type="password" name="password" class="form-control form-control-lg" aria-label="Password" value="secret" >
+                                            <input type="password" name="password" class="form-control form-control-lg" aria-label="Password" placeholder="Password" >
                                             @error('password') <p class="text-danger text-xs pt-1"> {{$message}} </p>@enderror
                                         </div>
                                         <div class="form-check form-switch">
@@ -59,13 +59,11 @@
                         <div
                             class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
                             <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
-                                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg');
+                                style="background-image: url('assets/img/login.svg');
               background-size: cover;">
                                 <span class="mask bg-gradient-primary opacity-6"></span>
-                                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Attention is the new
-                                    currency"</h4>
-                                <p class="text-white position-relative">The more effortless the writing looks, the more
-                                    effort the writer actually put into the process.</p>
+                                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Halo, Teman!"</h4>
+                                <p class="text-white position-relative">Daftarkan diri anda dan mulai gunakan layanan kami segera</p>
                             </div>
                         </div>
                     </div>
