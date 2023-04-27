@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +19,15 @@ Route::get('/', function () {
     return view('LandingPage');
 });
 
+Route::resource("/student", StudentController::class);
+
+Route::get('/chat', function () {
+    return view('user.pages.chat');
+});
 
 Route::get('/home', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/ormawa', function () {
     return view('user.pages.ormawa');
