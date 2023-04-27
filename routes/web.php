@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('LandingPage');
 });
 
+Route::get('/chat', function () {
+    return view('user.pages.chat');
+});
 
 Route::get('/home', function () {
     return view('welcome');
