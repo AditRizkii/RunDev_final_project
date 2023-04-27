@@ -24,7 +24,7 @@ Route::get('/chat', function () {
 
 Route::get('/home', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/ormawa', function () {
     return view('user.pages.ormawa');
