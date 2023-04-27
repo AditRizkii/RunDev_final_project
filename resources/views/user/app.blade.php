@@ -19,7 +19,7 @@
     <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="assets/css/argon-dashboard.css" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="../assets/img/hehe.png">
+    <link rel="icon" type="image/png" href="../assets/img/hehe.png">
 
 </head>
 
