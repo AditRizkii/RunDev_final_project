@@ -17,29 +17,33 @@ use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('LandingPage');
-});
+})->name('home');
 
 Route::resource("/student", StudentController::class);
 
-Route::get('/chat', function () {
-    return view('user.pages.chat');
-});
+
 
 Route::get('/home', function () {
     return view('welcome');
-})->name('home');
-
-Route::get('/ormawa', function () {
-    return view('user.pages.ormawa');
 });
 
-Route::get('/dashboard', function () {
-    return view('user.pages.dashboard');
-})->middleware(['auth', 'verified', 'role:mahasiswa'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function(){
+    Route::get('/post', function () {
+        return view('user.pages.post');
+    })->name('post');
 
-Route::get('/post', function () {
-    return view('user.pages.post');
-})->middleware(['auth', 'verified', 'role:mahasiswa'])->name('post');
+    Route::get('/dashboard', function () {
+        return view('user.pages.dashboard');
+    })->name('dashboard');
+
+    Route::get('/ormawa', function () {
+        return view('user.pages.ormawa');
+    })->name('ormawa');
+
+    Route::get('/chat', function () {
+        return view('user.pages.chat');
+    })->name('chat');
+});
 
 Route::get('/admin', function () {
     return view('admin.layouts.admin');
