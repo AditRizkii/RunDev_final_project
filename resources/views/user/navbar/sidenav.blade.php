@@ -65,7 +65,7 @@
                 </a>
             </li>
             @if (Route::has('login'))
-                {{-- @role('admin')
+                @role('admin')
                 <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'profile.edit' ? 'active' : '' }}" href="{{ route('profile.edit') }}">
                         <div
@@ -74,7 +74,7 @@
                         </div>
                         <span class="nav-link-text ms-1">ff</span>
                     </a>
-                </li> --}}
+                </li>
                 @role('ormawa')
                 <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'profile.edit' ? 'active' : '' }}" href="{{ route('profile.edit') }}">
@@ -86,7 +86,7 @@
                     </a>
                 </li>
                 @endrole
-                {{-- @endrole --}}
+                @endrole
                 @auth
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
