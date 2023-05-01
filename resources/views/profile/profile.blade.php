@@ -1,13 +1,13 @@
-@extends('layouts.app', ['class' => 'g-sidenav-show bg-gray-100'])
+@extends('user.app', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
-    @include('layouts.navbars.auth.topnav', ['title' => 'Profile'])
-    <div class="card shadow-lg mx-4 card-profile-bottom">
+    @include('user.navbar.topnav', ['title' => 'Profile'])
+    <div class=" card shadow-lg mx-4 card-profile-top">
         <div class="card-body p-3">
             <div class="row gx-4">
                 <div class="col-auto">
                     <div class="avatar avatar-xl position-relative">
-                        <img src="/img/team-1.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                        <img src="{{ Vite::asset('public/assets/img/team-1.jpg') }}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
                     </div>
                 </div>
                 <div class="col-auto my-auto">
@@ -133,12 +133,12 @@
             </div>
             <div class="col-md-4">
                 <div class="card card-profile">
-                    <img src="/img/bg-profile.jpg" alt="Image placeholder" class="card-img-top">
+                    <img src="{{ Vite::asset('public/assets/img/bg-profile.jpg') }}" alt="Image placeholder" class="card-img-top">
                     <div class="row justify-content-center">
                         <div class="col-4 col-lg-4 order-lg-2">
                             <div class="mt-n4 mt-lg-n6 mb-4 mb-lg-0">
                                 <a href="javascript:;">
-                                    <img src="/img/team-2.jpg"
+                                    <img src="{{ Vite::asset('public/assets/img/team-2.jpg') }}"
                                         class="rounded-circle img-fluid border-2 border-white">
                                 </a>
                             </div>
@@ -192,6 +192,6 @@
                 </div>
             </div>
         </div>
-        @include('layouts.footers.auth.footer')
+        @include('admin.layouts.partials.footer')
     </div>
 @endsection
