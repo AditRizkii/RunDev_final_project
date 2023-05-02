@@ -40,6 +40,10 @@ Route::middleware(['auth', 'verified'])->group(function(){
         return view('user.pages.ormawa');
     })->name('ormawa');
 
+    Route::get('/kirim-surat', function () {
+        return view('user.pages.kirim-surat');
+    })->name('kirim-surat');
+
     Route::get('/chat', function () {
         return view('user.pages.chat');
     })->name('chat');
