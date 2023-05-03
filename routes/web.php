@@ -50,6 +50,10 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/chat', function () {
         return view('user.pages.chat');
     })->name('chat');
+
+    Route::get('/forum', function () {
+        return view('user.pages.forum');
+    })->name('forum');
 });
 
 Route::middleware(['auth', 'verified', 'role:admin'])->name('admin.')->prefix('admin')->group(function(){
