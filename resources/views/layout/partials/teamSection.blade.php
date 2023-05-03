@@ -29,7 +29,7 @@
                         <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                             <a href="javascript:;">
                                 <div class="p-3 pe-md-0">
-                                    <img class="w-100 border-radius-md" src="../assets/img/team-4.jpg" alt="image">
+                                    <img class="w-100 border-radius-md" src="../assets/img/team-1.jpg" alt="image">
                                 </div>
                             </a>
                         </div>
@@ -49,7 +49,7 @@
                         <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                             <a href="javascript:;">
                                 <div class="p-3 pe-md-0">
-                                    <img class="w-100 border-radius-md" src="../assets/img/bruce-mars.jpg"
+                                    <img class="w-100 border-radius-md" src="../assets/img/team-3.jpg"
                                         alt="image">
                                 </div>
                             </a>
@@ -72,7 +72,7 @@
                         <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                             <a href="javascript:;">
                                 <div class="p-3 pe-md-0">
-                                    <img class="w-100 border-radius-md" src="../assets/img/ivana-square.jpg"
+                                    <img class="w-100 border-radius-md" src="../assets/img/team-2.jpg"
                                         alt="image">
                                 </div>
                             </a>
@@ -115,7 +115,7 @@
                         <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                             <a href="javascript:;">
                                 <div class="p-3 pe-md-0">
-                                    <img class="w-100 border-radius-md" src="../assets/img/ivana-square.jpg"
+                                    <img class="w-100 border-radius-md" src="../assets/img/team-5.jpg"
                                         alt="image">
                                 </div>
                             </a>
@@ -136,7 +136,7 @@
                         <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                             <a href="javascript:;">
                                 <div class="p-3 pe-md-0">
-                                    <img class="w-100 border-radius-md" src="../assets/img/team-4.jpg" alt="image">
+                                    <img class="w-100 border-radius-md" src="../assets/img/team-6.jpg" alt="image">
                                 </div>
                             </a>
                         </div>

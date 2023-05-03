@@ -1,4 +1,4 @@
-@extends('user.app', ['class' => 'g-sidenav-show bg-gray-100'])
+@extends('admin.adminApp', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
     @include('admin.layouts.partials.topnav', ['title' => 'Dashboard'])
