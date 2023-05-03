@@ -50,13 +50,22 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/chat', function () {
         return view('user.pages.chat');
     })->name('chat');
+    
+    Route::get('/forum', function () {
+        return view('user.pages.forum');
+    })->name('forum');
 });
 
 Route::middleware(['auth', 'verified', 'role:admin'])->name('admin.')->prefix('admin')->group(function(){
     Route::get('/',[IndexController::class,'index'])->name('index');
     // Route::get('/role',[RoleController::class,'index'])->name('role');
     Route::resource('/roles',RoleController::class);
+    Route::post('/roles/{role}/permissions',[RoleController::class,'givePermission'])->name('roles.permissions');
+    Route::delete('/roles/{role}/permissions/{permission}',[RoleController::class,'revokePermission'])->name('roles.permissions.revoke');
+
     Route::resource('/permissions',PermissionController::class);
+    Route::post('/permissions/{permission}/roles',[RoleController::class,'givePermission'])->name('roles.permissions');
+    Route::delete('/roles/{role}/permissions/{permission}',[RoleController::class,'revokePermission'])->name('roles.permissions.revoke');
 }); 
 
 Route::middleware('auth')->group(function () {
