@@ -13,9 +13,14 @@
                         <div class="card-body">
                             <p class="card-text">HMIF - USK</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <div class="my-2 mx-4">
+                                        <i class="fa fa-duotone fa-trash text-sm"></i>
+                                    </div>
                                 </div>
                                 <small class="text-body-secondary">9 mins</small>
                             </div>
@@ -28,11 +33,16 @@
                         <div class="card-body">
                             <p class="card-text">HMIF - USK</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <div class="my-2 mx-4">
+                                        <i class="fa fa-duotone fa-trash text-sm"></i>
+                                    </div>
                                 </div>
-                                <small class="text-body-secondary">2 weeks</small>
+                                <small class="text-body-secondary">9 mins</small>
                             </div>
                         </div>
                     </div>
@@ -43,11 +53,16 @@
                         <div class="card-body">
                             <p class="card-text">HMIF - USK</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <div class="my-2 mx-4">
+                                        <i class="fa fa-duotone fa-trash text-sm"></i>
+                                    </div>
                                 </div>
-                                <small class="text-body-secondary">1 month</small>
+                                <small class="text-body-secondary">9 mins</small>
                             </div>
                         </div>
                     </div>
@@ -59,11 +74,16 @@
                         <div class="card-body">
                             <p class="card-text">BEM - USK</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <div class="my-2 mx-4">
+                                        <i class="fa fa-duotone fa-trash text-sm"></i>
+                                    </div>
                                 </div>
-                                <small class="text-body-secondary">1 month</small>
+                                <small class="text-body-secondary">9 mins</small>
                             </div>
                         </div>
                     </div>
@@ -74,11 +94,16 @@
                         <div class="card-body">
                             <p class="card-text">HMIF - USK</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <div class="my-2 mx-4">
+                                        <i class="fa fa-duotone fa-trash text-sm"></i>
+                                    </div>
                                 </div>
-                                <small class="text-body-secondary">1 month</small>
+                                <small class="text-body-secondary">9 mins</small>
                             </div>
                         </div>
                     </div>
