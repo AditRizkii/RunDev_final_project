@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 z-0 shadow-none border-radius-xl" id="navbarBlur"
-        data-scroll="false">
+    data-scroll="false">
     <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                         <h6 class="text-sm font-weight-normal mb-1">
-                                            <span class="font-weight-bold">New message</span> from Laur
+                                            <span class="font-weight-bold">New message</span> from Khairul
                                         </h6>
                                         <p class="text-xs text-secondary mb-0">
                                             <i class="fa fa-clock me-1"></i>
@@ -67,12 +67,12 @@
                             <a class="dropdown-item border-radius-md" href="javascript:;">
                                 <div class="d-flex py-1">
                                     <div class="my-auto">
-                                        <img src="./img/small-logos/logo-spotify.svg"
+                                        <img src="/assets/img/team-3.jpg"
                                             class="avatar avatar-sm bg-gradient-dark  me-3 ">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                         <h6 class="text-sm font-weight-normal mb-1">
-                                            <span class="font-weight-bold">New album</span> by Travis Scott
+                                            <span class="font-weight-bold">New message</span> by Teuku Rifal
                                         </h6>
                                         <p class="text-xs text-secondary mb-0">
                                             <i class="fa fa-clock me-1"></i>
@@ -120,6 +120,26 @@
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li>
+                    @role('admin')
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/assets/img/team-3.jpg" alt="profil" class="avatar avatar-sm  me-3 ">
+                            {{ Auth::user()->name }}
+                        </button>
+                        <ul class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="{{ route('admin.index') }}">Admin Dashboard</a></li>
+                        </ul>
+                    </div>
+                    @else
+                        <div class="text-white font-weight-bold d-flex flex-row row-gap-0 justify-content-center align-items-center">
+                            <img src="/assets/img/team-3.jpg" alt="profil" class="avatar avatar-sm  me-1 ">
+                            {{ Auth::user()->name }}
+                        </div>
+                    @endrole
+                    
                 </li>
             </ul>
         </div>
