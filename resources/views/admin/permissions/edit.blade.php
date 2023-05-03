@@ -27,6 +27,50 @@
                         </div>
                     </form>
                 </div>
+                <div class="mt-2 p-2">
+                    <h2 class="fs-2 fw-bold">Roles</h2>
+                    
+                    <div class="mt-4 p-2">
+                        @if ($permission->roles)
+                            @foreach ($permission->roles as $permission_role)
+                            <div>
+                                <span>{{ $permission_role->name }}</span>
+                                <form method="POST" class="d-inline-block" action="{{ route('admin.permissions.roles.remove', [$role->id, $permission_role->id])  }}" onsubmit="return confirm('Apakah Anda Yakin?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="border-0 bg-transparent" type="submit"><img src="{{ Vite::asset('public/assets/img/min.png') }}" alt="del"></button>
+                                </form>
+                            </div>
+                            @endforeach
+                        @endif
+                    </div>
+                    <div>
+                        <form method="POST" action="{{ route('admin.permissions.roles', $permission->id) }}">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="role">Role Name</label>
+                                <select id="role" name="role" autocomplete="role-name" class="form-select" aria-label="Default select example">
+                                    @foreach ($roles as $role)
+                                        <option value="{{ $role->name }}">{{ $role->name }}</option>
+                                    @endforeach
+                                  </select>
+                            </div>
+                            @error('role')
+                                <div class="alert alert-danger d-flex align-items-center text-dark" role="alert">
+                                    <div>
+                                        {{ $message }}
+                                    </div>
+                                </div>
+                            @enderror
+                            <div class="d-flex justify-content-center">
+                                <a href="{{ route('admin.roles.index') }}"
+                                    class="px-4 mx-4 py-2 mb-2 badge rounded-pill bg-secondary">Back to Roles Page</a>
+                                <button type="submit"
+                                    class="px-4 py-2 mb-2 badge rounded-pill bg-success border-0">Assign</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
