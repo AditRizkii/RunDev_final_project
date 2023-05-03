@@ -7,16 +7,16 @@
             <div class="row gx-4">
                 <div class="col-auto">
                     <div class="avatar avatar-xl position-relative">
-                        <img src="{{ Vite::asset('public/assets/img/team-1.jpg') }}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                        <img src="{{ Vite::asset('public/assets/img/team-2.jpg') }}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
                     </div>
                 </div>
                 <div class="col-auto my-auto">
                     <div class="h-100">
                         <h5 class="mb-1">
-                            Sayo Kravits
+                            Khairul Auni
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                            Public Relations
+                            Hubungan Publik
                         </p>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                             <div class="col">
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid text-center">
-                                        <span class="text-lg font-weight-bolder">22</span>
+                                        <span class="text-lg font-weight-bolder">2000</span>
                                         <span class="text-sm opacity-8">Friends</span>
                                     </div>
                                     <div class="d-grid text-center mx-4">
@@ -176,16 +176,15 @@
                         </div>
                         <div class="text-center mt-4">
                             <h5>
-                                Mark Davis<span class="font-weight-light">, 35</span>
+                                 Khairul Auni<span class="font-weight-light">, 17</span>
                             </h5>
                             <div class="h6 font-weight-300">
-                                <i class="ni location_pin mr-2"></i>Bucharest, Romania
-                            </div>
+                                <i class="ni location_pin mr-2"></i>Tungkop, Arab Saudi
                             <div class="h6 mt-4">
                                 <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
                             </div>
                             <div>
-                                <i class="ni education_hat mr-2"></i>University of Computer Science
+                                <i class="ni education_hat mr-2"></i>University of Syiah Kuala
                             </div>
                         </div>
                     </div>
