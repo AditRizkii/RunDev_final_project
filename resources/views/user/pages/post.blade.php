@@ -183,8 +183,8 @@ _______________________
                                                 <div class="col mx-5 my-3 margin-left-5 text-dark">
                                                     <div class="border-bottom border-2 px-3">
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"><img
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
                                                                     src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
                                                                     class="w-80 h-auto" alt="close"></button>
                                                         </div>
@@ -196,10 +196,13 @@ _______________________
 
                                                     </div>
                                                     <div class="p-3 py-4 border-bottom border-2">
-                                                        <p class="fs-5 fw-medium">[𝐁𝐔𝐊𝐁𝐄𝐑 & 𝐓𝐀𝐊𝐉𝐈𝐋 𝐎𝐍 𝐓𝐇𝐄 𝐑𝐎𝐀𝐃]</p>
+                                                        <p class="fs-5 fw-medium">[𝐁𝐔𝐊𝐁𝐄𝐑 & 𝐓𝐀𝐊𝐉𝐈𝐋 𝐎𝐍 𝐓𝐇𝐄
+                                                            𝐑𝐎𝐀𝐃]</p>
                                                         <p class="fs-5 fw-medium">Assalamu'alaikum. Wr. Wb</p>
                                                         <p class="fs-5 fw-medium">Halo sobat Informatika 🤩 <br>
-                                                            Sehubungan akan dilaksanakannya Kegiatan Buka Bersama dan Takjil On The Road, maka HMIF USK mengundang seluruh Mahasiswa/i dan Alumni Informatika untuk berhadir dalam kegiatan ini.</p>
+                                                            Sehubungan akan dilaksanakannya Kegiatan Buka Bersama dan Takjil
+                                                            On The Road, maka HMIF USK mengundang seluruh Mahasiswa/i dan
+                                                            Alumni Informatika untuk berhadir dalam kegiatan ini.</p>
                                                         <p class="fs-5 fw-medium">🗓️ : Sabtu, 01 April 2022 <br>
                                                             ⏰ : 16.30 WIB s.d Selesai <br>
                                                             📍 : Aula MIPA (Bukber) & Simpang BPKP (Takjil) <br>
@@ -240,8 +243,8 @@ _______________________
                                                 <div class="col mx-5 my-3 margin-left-5 text-dark">
                                                     <div class="border-bottom border-2 px-3">
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"><img
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
                                                                     src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
                                                                     class="w-80 h-auto" alt="close"></button>
                                                         </div>
@@ -328,8 +331,8 @@ _______________________________________
                                                 <div class="col mx-5 my-3 margin-left-5 text-dark">
                                                     <div class="border-bottom border-2 px-3">
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"><img
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
                                                                     src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
                                                                     class="w-80 h-auto" alt="close"></button>
                                                         </div>
@@ -342,17 +345,25 @@ _______________________________________
                                                     </div>
                                                     <div class="p-3 py-4 border-bottom border-2">
                                                         <p class="fs-5 fw-medium">[𝐎𝐏𝐄𝐍 𝐃𝐎𝐍𝐀𝐒𝐈 𝐓𝐀𝐊𝐉𝐈𝐋]</p>
-                                                        <p class="fs-5 fw-medium">Himpunan Mahasiswa Informatika USK membuka Open Donasi untuk pembagian Takjil On the Road dengan tema "Berbagi Berkah Bersama Informatika" yang dibuka mulai : <br>
-                                                            🗓️ 21-31 Maret 2023</p>
+                                                        <p class="fs-5 fw-medium">Himpunan Mahasiswa Informatika USK
+                                                            membuka Open Donasi untuk pembagian Takjil On the Road dengan
+                                                            tema "Berbagi Berkah Bersama Informatika" yang dibuka mulai :
+                                                            <br>
+                                                            🗓️ 21-31 Maret 2023
+                                                        </p>
                                                         <p class="fs-5 fw-medium">Pembagian takjil dilaksanakan : <br>
                                                             🗓️ 01 April 2023</p>
                                                         <p class="fs-5 fw-medium">Rekening penyaluran Donasi : <br>
                                                             🗳️ 8669593810 (a.n.Nadhira Fatwa Lubis)</p>
-                                                        <p class="fs-5 fw-medium">Sedekah dapat menjadi pelindung musibah dan mencegah masuk neraka. Rasulullah SAW bersabda: “Sesungguhnya sedekah itu memadamkan murka Allah dan menolak mati jelek (su’ul khotimah).” (HR Thabrani)</p>
+                                                        <p class="fs-5 fw-medium">Sedekah dapat menjadi pelindung musibah
+                                                            dan mencegah masuk neraka. Rasulullah SAW bersabda:
+                                                            “Sesungguhnya sedekah itu memadamkan murka Allah dan menolak
+                                                            mati jelek (su’ul khotimah).” (HR Thabrani)</p>
                                                         <p class="fs-5 fw-medium">Narahubung : <br>
                                                             📱 0822-7958-9023 (Azza) <br>
                                                             📱 0895-1292-5300 (Nadhira)</p>
-                                                        <p class="fs-5 fw-medium">Yuk berdonasi untuk menyambut bulan suci ramadhan kali ini🤗😇</p>
+                                                        <p class="fs-5 fw-medium">Yuk berdonasi untuk menyambut bulan suci
+                                                            ramadhan kali ini🤗😇</p>
                                                         <p class="fs-5 fw-medium">
                                                             _____________________________ <br>
                                                             𝐃𝐄𝐏𝐀𝐑𝐓𝐄𝐌𝐄𝐍 𝐒𝐎𝐒𝐌𝐀𝐒 <br>
@@ -386,8 +397,8 @@ _______________________________________
                                                 <div class="col mx-5 my-3 margin-left-5 text-dark">
                                                     <div class="border-bottom border-2 px-3">
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"><img
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
                                                                     src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
                                                                     class="w-80 h-auto" alt="close"></button>
                                                         </div>
@@ -479,8 +490,8 @@ ____________________________
                                                 <div class="col mx-5 my-3 margin-left-5 text-dark">
                                                     <div class="border-bottom border-2 px-3">
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"><img
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
                                                                     src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
                                                                     class="w-80 h-auto" alt="close"></button>
                                                         </div>
@@ -493,13 +504,17 @@ ____________________________
                                                     </div>
                                                     <div class="p-3 py-4 border-bottom border-2">
                                                         <p class="fs-5 fw-medium">Assalamualaikum,</p>
-                                                        <p class="fs-5 fw-medium">👋🏻Haloo,Selamat malam kawan kawan HMIF </p>
-                                                        <p class="fs-5 fw-medium">Keluarga Besar MIPA (KBM) bakalan ngadain Malam Keakraban (MAKRAB) pada : </p>
+                                                        <p class="fs-5 fw-medium">👋🏻Haloo,Selamat malam kawan kawan HMIF
+                                                        </p>
+                                                        <p class="fs-5 fw-medium">Keluarga Besar MIPA (KBM) bakalan ngadain
+                                                            Malam Keakraban (MAKRAB) pada : </p>
                                                         <p class="fs-5 fw-medium">
                                                             📆Hari,Tanggal : Jumat, 17 Maret 2023 <br>
                                                             📍Tempat : Rumoh Aceh Lampineung</p>
-                                                        <p class="fs-5 fw-medium">Buat kawan kawan bisa gabung nihhh untuk join MAKRAB biar saling berkenalan dengan keluarga besar FMIPA lainnya..🤝 <br>
-                                                        Ditunggu kehadiraannyaa yaa 🫶</p>
+                                                        <p class="fs-5 fw-medium">Buat kawan kawan bisa gabung nihhh untuk
+                                                            join MAKRAB biar saling berkenalan dengan keluarga besar FMIPA
+                                                            lainnya..🤝 <br>
+                                                            Ditunggu kehadiraannyaa yaa 🫶</p>
                                                         <p class="fs-5 fw-medium">Thankyouu👋🏻👋🏻</p>
                                                     </div>
                                                     <div class="p-3 flex">
@@ -528,8 +543,8 @@ ____________________________
                                                 <div class="col mx-5 my-3 margin-left-5 text-dark">
                                                     <div class="border-bottom border-2 px-3">
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"><img
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
                                                                     src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
                                                                     class="w-80 h-auto" alt="close"></button>
                                                         </div>
@@ -584,14 +599,164 @@ Thankyouu👋🏻👋🏻
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#infdevModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#edinfdevModal">Edit</button>
                                     </div>
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
                                 </div>
-                                <small class="text-body-secondary">9 mins</small>
+                                <small class="text-body-secondary">March 14</small>
+                            </div>
+
+                            <div class="modal fade" id="infdevModal" tabindex="-1" aria-labelledby="exModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                    <div class="modal-content rounded-25">
+                                        <div class="modal-body py-0 px-0">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img style="width: 100%; height: 100%; border-top-left-radius: 10px;
+                                                    border-bottom-left-radius: 10px;"
+                                                        src="assets/img/post/infdev.png" alt="">
+                                                </div>
+                                                <div class="col mx-5 my-3 margin-left-5 text-dark">
+                                                    <div class="border-bottom border-2 px-3">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
+                                                                    src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
+                                                                    class="w-80 h-auto" alt="close"></button>
+                                                        </div>
+                                                        <p class="fw-bold fs-3 lh-sm">HMIF (Himpunan Mahasiswa Informatika)
+                                                            - USK
+                                                        </p>
+                                                        <p class="fw-normal fs-6 px-2 lh-1 text-secondary">Dari <span
+                                                                class="text-primary">Teuku Rifal Aulia</span> </p>
+
+                                                    </div>
+                                                    <div class="p-3 py-4 border-bottom border-2">
+                                                        <p class="fs-5 fw-medium">[𝐇𝐌𝐈𝐅 𝐔𝐒𝐊 𝐂𝐋𝐔𝐁𝐒]</p>
+                                                        <p class="fs-5 fw-medium">Hi, programmers👋 <br>
+                                                            Kesempatan baru nich buat kalian yang ingin menambah wawasan,
+                                                            relasi dan tentunya menambah skill diri dengan bergabung bersama
+                                                            kami di</p>
+                                                        <p class="fs-5 fw-medium">👩🏻‍💻 INFORMATICS DEVELOPER CLUB</p>
+                                                        <p class="fs-5 fw-medium">Informatic Developer Club merupakan wadah
+                                                            diskusi yang disajikan oleh HMIF USK dengan tujuan saling
+                                                            bertukar saling bertukar pikiran dan informasi tentang
+                                                            teknologi.</p>
+                                                        <p class="fs-5 fw-medium">Syarat dan ketentuan : <br>
+                                                            Mahasiswa aktif Informatika USK</p>
+                                                        <p class="fs-5 fw-medium">Jenis Club : <br>
+                                                            1. Data Science Club <br>
+                                                            2. Web Development Club <br>
+                                                            3. UI & UX Design Club</p>
+                                                        <p class="fs-5 fw-medium">🎁 Benefit : <br>
+                                                            1. Menambah relasi <br>
+                                                            2. Berbagi ilmu <br>
+                                                            3. Meningkatkan skill</p>
+                                                        <p class="fs-5 fw-medium">🔥 Register Now 🔥 <br>
+                                                            http://bit.ly/InformaticsClub2023</p>
+                                                        <p class="fs-5 fw-medium">📩 Contact Person : <br>
+                                                            📲 Anas Naufal Al-kiram <br>
+                                                            wa.me/+6289503238724</p>
+                                                        <p class="fs-5 fw-medium">________________ <br>
+                                                            𝐃𝐄𝐏𝐀𝐑𝐓𝐄𝐌𝐄𝐍 𝐏𝐏𝐌 <br>
+                                                            𝐇𝐌𝐈𝐅 𝐔𝐒𝐊 𝟐𝟎𝟐𝟑 <br>
+                                                            𝐊𝐀𝐁𝐈𝐍𝐄𝐓 𝐈𝐍𝐅𝐈𝐍𝐈𝐓𝐘</p>
+                                                    </div>
+                                                    <div class="p-3 flex">
+                                                        <img src="{{ Vite::asset('public/assets/img/post/likea.png') }}"
+                                                            id="like" style="width: 35px" alt=""
+                                                            onclick="changeImage(this)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="edinfdevModal" tabindex="-1" aria-labelledby="editModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                    <div class="modal-content rounded-25">
+                                        <div class="modal-body py-0 px-0">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img style="width: 100%; height: 100%; border-top-left-radius: 10px;
+                                                    border-bottom-left-radius: 10px;"
+                                                        src="assets/img/post/infdev.png" alt="">
+                                                </div>
+                                                <div class="col mx-5 my-3 margin-left-5 text-dark">
+                                                    <div class="border-bottom border-2 px-3">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"><img
+                                                                    src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
+                                                                    class="w-80 h-auto" alt="close"></button>
+                                                        </div>
+                                                        <p class="fw-bold fs-3 lh-sm">HMIF (Himpunan Mahasiswa Informatika)
+                                                            - USK
+                                                        </p>
+                                                        <p class="fw-normal fs-6 px-2 lh-1 text-secondary">Dari <span
+                                                                class="text-primary">Teuku Rifal Aulia</span> </p>
+
+                                                    </div>
+                                                    <div class="p-3 py-4">
+                                                        <div class="md-form flex">
+                                                            <label for="form10" class="fs-6 fw-base mx-1">Edit
+                                                                Caption</label>
+                                                            <i class="fas fa-pencil-alt prefix"></i>
+                                                            <textarea id="form10" class="xl-textarea form-control mb-3" rows="15">[𝐇𝐌𝐈𝐅 𝐔𝐒𝐊 𝐂𝐋𝐔𝐁𝐒]
+
+Hi, programmers👋
+Kesempatan baru nich buat kalian yang ingin menambah wawasan, relasi dan tentunya menambah skill diri dengan bergabung bersama kami di
+                                                                
+👩🏻‍💻 INFORMATICS DEVELOPER  CLUB
+                                                                
+Informatic Developer Club merupakan wadah diskusi yang disajikan oleh HMIF USK dengan tujuan saling bertukar saling bertukar pikiran dan informasi tentang teknologi.
+                                                                
+Syarat dan ketentuan :
+Mahasiswa aktif Informatika USK
+                                                                
+Jenis Club :
+1. Data Science Club
+2. Web Development Club
+3. UI & UX Design Club
+                                                                
+🎁 Benefit :
+1. Menambah relasi
+2. Berbagi ilmu
+3. Meningkatkan skill
+                                                                
+🔥 Register Now 🔥
+http://bit.ly/InformaticsClub2023
+                                                                
+📩 Contact Person :
+📲 Anas Naufal Al-kiram 
+    wa.me/+6289503238724
+                                                                
+________________
+𝐃𝐄𝐏𝐀𝐑𝐓𝐄𝐌𝐄𝐍 𝐏𝐏𝐌
+𝐇𝐌𝐈𝐅 𝐔𝐒𝐊 𝟐𝟎𝟐𝟑
+𝐊𝐀𝐁𝐈𝐍𝐄𝐓 𝐈𝐍𝐅𝐈𝐍𝐈𝐓𝐘
+                                                                </textarea>
+                                                            <div class="d-flex justify-content-end mx-5">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary my-4 ">Simpan</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
