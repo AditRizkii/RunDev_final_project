@@ -45,17 +45,20 @@
         @include('admin.layouts.partials.sidenav')
         <main class="main-content border-radius-lg">
             @if (Session::has('message'))
-        <div class="alert alert-success alert-dismissible fade show" role="alert" x-data="{open:true}" x-show="open">
-        {{ Session::get('message') }}
-        <button @click="open=false" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><img src="{{ Vite::asset('public/assets/img/x-solid.svg') }}" alt="close"></button>
-      </div>
-    @endif
+                <div class="alert alert-success alert-dismissible fade show mx-4 mb-4" role="alert" x-data="{ open: true }"
+                    x-show="open">
+                    {{ Session::get('message') }}
+                    <button @click="open=false" type="button" class="btn-close align-middle" data-bs-dismiss="alert"
+                        aria-label="Close"><img src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
+                            alt="close" style="width: 24px; height:24px;"></button>
+                </div>
+            @endif
             @yield('content')
         </main>
         @include('components.fixed-plugin')
     @endauth
-    
-    
+
+
     <!--   Core JS Files   -->
     <script src="{{ Vite::asset('public/assets/js/core/popper.min.js') }}"></script>
     <script src="{{ Vite::asset('public/assets/js/core/bootstrap.min.js') }}"></script>
