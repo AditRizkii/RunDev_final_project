@@ -49,11 +49,11 @@
                             <a class="dropdown-item border-radius-md" href="javascript:;">
                                 <div class="d-flex py-1">
                                     <div class="my-auto">
-                                        <img src="assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                                        <img src="assets/img/team-6.jpg" class="avatar avatar-sm  me-3 ">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                         <h6 class="text-sm font-weight-normal mb-1">
-                                            <span class="font-weight-bold">New message</span> from Khairul
+                                            <span class="font-weight-bold">New message</span> from Tyara
                                         </h6>
                                         <p class="text-xs text-secondary mb-0">
                                             <i class="fa fa-clock me-1"></i>
@@ -67,7 +67,7 @@
                             <a class="dropdown-item border-radius-md" href="javascript:;">
                                 <div class="d-flex py-1">
                                     <div class="my-auto">
-                                        <img src="/assets/img/team-3.jpg"
+                                        <img src="/assets/img/team-5.jpg"
                                             class="avatar avatar-sm bg-gradient-dark  me-3 ">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
@@ -126,7 +126,7 @@
                     <div class="dropdown">
                         <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="/assets/img/team-3.jpg" alt="profil" class="avatar avatar-sm  me-3 ">
+                            <img src="/assets/img/team-2.jpg" alt="profil" class="avatar avatar-sm  me-3 ">
                             {{ Auth::user()->name }}
                         </button>
                         <ul class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButton1">
@@ -135,7 +135,7 @@
                     </div>
                     @else
                         <div class="text-white font-weight-bold d-flex flex-row row-gap-0 justify-content-center align-items-center">
-                            <img src="/assets/img/team-3.jpg" alt="profil" class="avatar avatar-sm  me-1 ">
+                            <img src="/assets/img/team-2.jpg" alt="profil" class="avatar avatar-sm  me-1 ">
                             {{ Auth::user()->name }}
                         </div>
                     @endrole

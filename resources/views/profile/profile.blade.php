@@ -7,16 +7,16 @@
             <div class="row gx-4">
                 <div class="col-auto">
                     <div class="avatar avatar-xl position-relative">
-                        <img src="{{ Vite::asset('public/assets/img/team-1.jpg') }}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                        <img src="{{ Vite::asset('public/assets/img/team-2.jpg') }}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
                     </div>
                 </div>
                 <div class="col-auto my-auto">
                     <div class="h-100">
                         <h5 class="mb-1">
-                            Sayo Kravits
+                            Khairul Auni
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                            Public Relations
+                            Hubungan Publik
                         </p>
                     </div>
                 </div>
@@ -66,25 +66,25 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Username</label>
-                                    <input class="form-control" type="text" value="lucky.jesse">
+                                    <input class="form-control" type="text" value="Khairul Auni">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Email address</label>
-                                    <input class="form-control" type="email" value="jesse@example.com">
+                                    <input class="form-control" type="email" value="Khairul@example.com">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">First name</label>
-                                    <input class="form-control" type="text" value="Jesse">
+                                    <input class="form-control" type="text" value="Khairul">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Last name</label>
-                                    <input class="form-control" type="text" value="Lucky">
+                                    <input class="form-control" type="text" value="Auni">
                                 </div>
                             </div>
                         </div>
@@ -95,19 +95,19 @@
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Address</label>
                                     <input class="form-control" type="text"
-                                        value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                        value="jl. T. Nyak Arief Lr. PBB No. Utama No. 06 Darussalam Banda Aceh">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">City</label>
-                                    <input class="form-control" type="text" value="New York">
+                                    <input class="form-control" type="text" value="Banda Aceh">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Country</label>
-                                    <input class="form-control" type="text" value="United States">
+                                    <input class="form-control" type="text" value="Indonesia">
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -124,7 +124,7 @@
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">About me</label>
                                     <input class="form-control" type="text"
-                                        value="A beautiful Dashboard for Bootstrap 5. It is Free and Open Source.">
+                                        value="Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.">
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                             <div class="col">
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid text-center">
-                                        <span class="text-lg font-weight-bolder">22</span>
+                                        <span class="text-lg font-weight-bolder">2000</span>
                                         <span class="text-sm opacity-8">Friends</span>
                                     </div>
                                     <div class="d-grid text-center mx-4">
@@ -176,16 +176,15 @@
                         </div>
                         <div class="text-center mt-4">
                             <h5>
-                                Mark Davis<span class="font-weight-light">, 35</span>
+                                 Khairul Auni<span class="font-weight-light">, 17</span>
                             </h5>
                             <div class="h6 font-weight-300">
-                                <i class="ni location_pin mr-2"></i>Bucharest, Romania
-                            </div>
+                                <i class="ni location_pin mr-2"></i>Banda Aceh, Indonesia
                             <div class="h6 mt-4">
-                                <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
+                                <i class="ni business_briefcase-24 mr-2"></i>Mahasiswa Informatika
                             </div>
                             <div>
-                                <i class="ni education_hat mr-2"></i>University of Computer Science
+                                <i class="ni education_hat mr-2"></i>Universitas Syiah Kuala
                             </div>
                         </div>
                     </div>
