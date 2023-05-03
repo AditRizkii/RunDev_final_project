@@ -6,12 +6,11 @@
         <div class="row justify-content-center h-100">
             <div class="col-md-8 col-xl-9 chat">
                 <div class="card">
-                    <div class="card-header msg_head">
+                    <div class="card-header msg_head bg-light">
                         <div class="d-flex bd-highlight">
-                            <div class="img_cont">
-                                <img src="{{ Vite::asset('public/assets/img/informatika.png') }}"
+                            <div class="assets/img/hehe.png">
+                                <img src="{{ Vite::asset('public/assets/img/hehe.png') }}"
                                     class="rounded-circle user_img">
-                                <span class="online_icon"></span>
                             </div>
                             <div class="user_info ">
                                 <span class="text-dark">FORUM DISKUSI</span>
@@ -68,7 +67,7 @@
                                 <span class="msg_time_send">9:05 AM, Today</span>
                             </div>
                             <div class="img_cont_msg">
-                                <img src="assets/img/informatika.png" class="rounded-circle user_img_msg">
+                                <img src="assets/img/team-2.jpg" class="rounded-circle user_img_msg">
                             </div>
                         </div>
 
@@ -143,7 +142,7 @@
                                 </div>
                             </div>
                         </div>
-                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -188,6 +187,8 @@
         .card-header {
             border-radius: 15px 15px 0 0 !important;
             border-bottom: 0 !important;
+            
+            
         }
 
         .card-footer {
