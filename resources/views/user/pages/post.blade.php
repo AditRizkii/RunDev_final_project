@@ -17,25 +17,25 @@
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#exModal">View</button>
+                                            data-bs-toggle="modal" data-bs-target="#kunkerModal">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
+                                            data-bs-toggle="modal" data-bs-target="#edkunkerModal">Edit</button>
                                     </div>
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
                                 </div>
-                                <small class="text-body-secondary">9 mins</small>
+                                <small class="text-body-secondary">April 14</small>
                             </div>
 
-                            <div class="modal fade" id="exModal" tabindex="-1" aria-labelledby="exModalLabel"
+                            <div class="modal fade" id="kunkerModal" tabindex="-1" aria-labelledby="exModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
                                     <div class="modal-content rounded-25">
                                         <div class="modal-body py-0 px-0">
                                             <div class="row">
                                                 <div class="col">
-                                                    <img style="width: 100%; border-top-left-radius: 10px;
+                                                    <img style="width: 100%; height: 100%; border-top-left-radius: 10px;
                                                     border-bottom-left-radius: 10px;"
                                                         src="assets/img/post/kunker.png" alt="">
                                                 </div>
@@ -86,14 +86,14 @@
                                 </div>
                             </div>
 
-                            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel"
+                            <div class="modal fade" id="edkunkerModal" tabindex="-1" aria-labelledby="editModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
                                     <div class="modal-content rounded-25">
                                         <div class="modal-body py-0 px-0">
                                             <div class="row">
                                                 <div class="col">
-                                                    <img style="width: 100%; border-top-left-radius: 10px;
+                                                    <img style="width: 100%; height: 100%; border-top-left-radius: 10px;
                                                     border-bottom-left-radius: 10px;"
                                                         src="assets/img/post/kunker.png" alt="">
                                                 </div>
@@ -117,7 +117,7 @@
                                                             <label for="form10" class="fs-6 fw-base mx-1">Edit
                                                                 Caption</label>
                                                             <i class="fas fa-pencil-alt prefix"></i>
-                                                            <textarea id="form10" class="xl-textarea form-control mb-3" rows="14">[ 𝐊𝐔𝐍𝐉𝐔𝐍𝐆𝐀𝐍 𝐊𝐄𝐑𝐉𝐀 ]
+                                                            <textarea id="form10" class="xl-textarea form-control mb-3" rows="15">[ 𝐊𝐔𝐍𝐉𝐔𝐍𝐆𝐀𝐍 𝐊𝐄𝐑𝐉𝐀 ]
 Halo teman-teman informatika!👋🏻
 
 Himpunan Mahasiswa Informatika (HMIF) telah melaksanakan kegiatan kunjungan kerja nih ke Himpunan Mahasiswa Teknik Komputer (HIMATEKKOM)
@@ -157,14 +157,138 @@ _______________________
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#bukberModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#edbukberModal">Edit</button>
                                     </div>
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
                                 </div>
-                                <small class="text-body-secondary">9 mins</small>
+                                <small class="text-body-secondary">March 28</small>
+                            </div>
+
+                            <div class="modal fade" id="bukberModal" tabindex="-1" aria-labelledby="exModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                    <div class="modal-content rounded-25">
+                                        <div class="modal-body py-0 px-0">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img style="width: 100%; height: 100%; border-top-left-radius: 10px;
+                                                    border-bottom-left-radius: 10px;"
+                                                        src="assets/img/post/bukber.png" alt="">
+                                                </div>
+                                                <div class="col mx-5 my-3 margin-left-5 text-dark">
+                                                    <div class="border-bottom border-2 px-3">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"><img
+                                                                    src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
+                                                                    class="w-80 h-auto" alt="close"></button>
+                                                        </div>
+                                                        <p class="fw-bold fs-3 lh-sm">HMIF (Himpunan Mahasiswa Informatika)
+                                                            - USK
+                                                        </p>
+                                                        <p class="fw-normal fs-6 px-2 lh-1 text-secondary">Dari <span
+                                                                class="text-primary">Tyara Raynasari</span> </p>
+
+                                                    </div>
+                                                    <div class="p-3 py-4 border-bottom border-2">
+                                                        <p class="fs-5 fw-medium">[𝐁𝐔𝐊𝐁𝐄𝐑 & 𝐓𝐀𝐊𝐉𝐈𝐋 𝐎𝐍 𝐓𝐇𝐄 𝐑𝐎𝐀𝐃]</p>
+                                                        <p class="fs-5 fw-medium">Assalamu'alaikum. Wr. Wb</p>
+                                                        <p class="fs-5 fw-medium">Halo sobat Informatika 🤩 <br>
+                                                            Sehubungan akan dilaksanakannya Kegiatan Buka Bersama dan Takjil On The Road, maka HMIF USK mengundang seluruh Mahasiswa/i dan Alumni Informatika untuk berhadir dalam kegiatan ini.</p>
+                                                        <p class="fs-5 fw-medium">🗓️ : Sabtu, 01 April 2022 <br>
+                                                            ⏰ : 16.30 WIB s.d Selesai <br>
+                                                            📍 : Aula MIPA (Bukber) & Simpang BPKP (Takjil) <br>
+                                                            👕 : Muslim dan Muslimah</p>
+                                                        <p class="fs-5 fw-medium">Kami tunggu kehadirannya
+                                                            <br>See you soon !! 🤗🤗
+                                                        </p>
+                                                        <p class="fs-5 fw-medium">
+                                                            _______________________________________ <br>
+                                                            𝐃𝐄𝐏𝐀𝐑𝐓𝐄𝐌𝐄𝐍 𝐀𝐆𝐀𝐌𝐀 & 𝐒𝐎𝐒𝐌𝐀𝐒 <br>
+                                                            𝐇𝐌𝐈𝐅 𝐔𝐒𝐊 𝟐𝟎𝟐𝟑 <br>
+                                                            𝐊𝐀𝐁𝐈𝐍𝐄𝐓 𝐈𝐍𝐅𝐈𝐍𝐈𝐓𝐘
+                                                        </p>
+                                                    </div>
+                                                    <div class="p-3 flex">
+                                                        <img src="{{ Vite::asset('public/assets/img/post/likea.png') }}"
+                                                            id="like" style="width: 35px" alt=""
+                                                            onclick="changeImage(this)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="edbukberModal" tabindex="-1" aria-labelledby="editModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                    <div class="modal-content rounded-25">
+                                        <div class="modal-body py-0 px-0">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img style="width: 100%; height: 100%; border-top-left-radius: 10px;
+                                                    border-bottom-left-radius: 10px;"
+                                                        src="assets/img/post/bukber.png" alt="">
+                                                </div>
+                                                <div class="col mx-5 my-3 margin-left-5 text-dark">
+                                                    <div class="border-bottom border-2 px-3">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"><img
+                                                                    src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
+                                                                    class="w-80 h-auto" alt="close"></button>
+                                                        </div>
+                                                        <p class="fw-bold fs-3 lh-sm">HMIF (Himpunan Mahasiswa Informatika)
+                                                            - USK
+                                                        </p>
+                                                        <p class="fw-normal fs-6 px-2 lh-1 text-secondary">Dari <span
+                                                                class="text-primary">Tyara Raynasari</span> </p>
+
+                                                    </div>
+                                                    <div class="p-3 py-4">
+                                                        <div class="md-form flex">
+                                                            <label for="form10" class="fs-6 fw-base mx-1">Edit
+                                                                Caption</label>
+                                                            <i class="fas fa-pencil-alt prefix"></i>
+                                                            <textarea id="form10" class="xl-textarea form-control mb-3" rows="15">[𝐁𝐔𝐊𝐁𝐄𝐑 & 𝐓𝐀𝐊𝐉𝐈𝐋 𝐎𝐍 𝐓𝐇𝐄 𝐑𝐎𝐀𝐃]
+
+Assalamu'alaikum. Wr. Wb
+                                                                
+Halo sobat Informatika 🤩
+Sehubungan akan dilaksanakannya Kegiatan Buka Bersama dan Takjil On The Road, maka HMIF USK mengundang seluruh Mahasiswa/i dan Alumni Informatika untuk berhadir dalam kegiatan ini.
+                                                                
+🗓️ : Sabtu, 01 April 2022
+⏰ : 16.30 WIB s.d Selesai
+📍 : Aula MIPA (Bukber) & Simpang BPKP (Takjil)
+👕 : Muslim dan Muslimah
+                                                                
+Kami tunggu kehadirannya
+See you soon !! 🤗🤗
+                                                                
+_______________________________________
+𝐃𝐄𝐏𝐀𝐑𝐓𝐄𝐌𝐄𝐍 𝐀𝐆𝐀𝐌𝐀 & 𝐒𝐎𝐒𝐌𝐀𝐒
+𝐇𝐌𝐈𝐅 𝐔𝐒𝐊 𝟐𝟎𝟐𝟑
+𝐊𝐀𝐁𝐈𝐍𝐄𝐓 𝐈𝐍𝐅𝐈𝐍𝐈𝐓𝐘
+                                                                </textarea>
+                                                            <div class="d-flex justify-content-end mx-5">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary my-4 ">Simpan</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
