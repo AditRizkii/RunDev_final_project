@@ -88,7 +88,7 @@
       <div class=" row">
         <div class="col-md-3 mb-4 ms-auto">
           <div>
-            <h6 class="text-gradient text-primary font-weight-bolder">Soft UI Design System</h6>
+            <h6 class="text-gradient text-primary font-weight-bolder">RunDev</h6>
           </div>
           <div>
             <h6 class="mt-3 mb-2 opacity-8">Social</h6>
@@ -131,40 +131,8 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
-                  Freebies
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
-                  Premium Tools
-                </a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
                   Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-6 col-6 mb-4">
-          <div>
-            <h6 class="text-gradient text-primary text-sm">Resources</h6>
-            <ul class="flex-column ms-n3 nav">
-              <li class="nav-item">
-                <a class="nav-link" href="https://iradesign.io/" target="_blank">
-                  Illustrations
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
-                  Bits & Snippets
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
-                  Affiliate Program
                 </a>
               </li>
             </ul>
@@ -224,7 +192,7 @@
             <p class="my-4 text-sm">
               All rights reserved. Copyright © <script>
                 document.write(new Date().getFullYear())
-              </script> Soft UI Design System by <span class="text-info">RunDev</span>.
+              </script> by <span class="text-info">RunDev</span>.
             </p>
           </div>
         </div>

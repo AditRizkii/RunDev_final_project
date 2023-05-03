@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\IndexController;
+use App\Http\Controllers\Admin\PermissionController;
+use App\Http\Controllers\Admin\RoleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
@@ -17,33 +20,44 @@ use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('LandingPage');
-});
+})->name('home');
 
 Route::resource("/student", StudentController::class);
 
-Route::get('/chat', function () {
-    return view('user.pages.chat');
-});
+
 
 Route::get('/home', function () {
     return view('welcome');
-})->name('home');
-
-Route::get('/ormawa', function () {
-    return view('user.pages.ormawa');
 });
 
-Route::get('/dashboard', function () {
-    return view('user.pages.dashboard');
-})->middleware(['auth', 'verified', 'role:mahasiswa'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function(){
+    Route::get('/post', function () {
+        return view('user.pages.post');
+    })->name('post');
 
-Route::get('/post', function () {
-    return view('user.pages.post');
-})->middleware(['auth', 'verified', 'role:mahasiswa'])->name('post');
+    Route::get('/dashboard', function () {
+        return view('user.pages.dashboard');
+    })->name('dashboard');
 
-Route::get('/admin', function () {
-    return view('admin.layouts.admin');
-})->middleware(['auth', 'verified', 'role:admin'])->name('admin.admin');
+    Route::get('/ormawa', function () {
+        return view('user.pages.ormawa');
+    })->name('ormawa');
+
+    Route::get('/kirim-surat', function () {
+        return view('user.pages.kirim-surat');
+    })->name('kirim-surat');
+
+    Route::get('/chat', function () {
+        return view('user.pages.chat');
+    })->name('chat');
+});
+
+Route::middleware(['auth', 'verified', 'role:admin'])->name('admin.')->prefix('admin')->group(function(){
+    Route::get('/',[IndexController::class,'index'])->name('index');
+    // Route::get('/role',[RoleController::class,'index'])->name('role');
+    Route::resource('/roles',RoleController::class);
+    Route::resource('/permissions',PermissionController::class);
+}); 
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
