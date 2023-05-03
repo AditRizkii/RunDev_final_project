@@ -7,12 +7,6 @@
             <div class="col-md-4 col-xl-3 chat">
                 <div class="card mb-sm-3 mb-md-0 contacts_card ">
                     <div class="card-header">
-                        {{-- <div class="input-group">
-                            <input type="text" placeholder="Search..." name="" class="form-control search">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
-                            </div>
-                        </div> --}}
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Search" aria-label="Search"
                                 aria-describedby="button-addon2" style="height:43px;">
@@ -85,7 +79,7 @@
                                         <span class="online_icon offline"></span>
                                     </div>
                                     <div class="user_info">
-                                        <span id="Sofia">Sofia</span>
+                                        <span id="adit">Aditya</span>
                                         <p>Left 50 mins ago</p>
                                     </div>
                                 </div>

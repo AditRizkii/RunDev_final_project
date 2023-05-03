@@ -34,7 +34,11 @@
                                     <div class="d-flex justify-content-end">
                                         <div class="mx-2">
                                             <a href="{{ route('admin.permissions.edit', $permission->id) }}" class="badge bg-primary">Edit</a> |
-                                            <a href="" class="badge bg-danger">Delete</a>
+                                            <form method="POST" class="d-inline-block" action="{{ route('admin.permissions.destroy', $permission->id)  }}" onsubmit="return confirm('Apakah Anda Yakin?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button class="border-0 badge bg-danger" type="submit">Delete</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </td>
