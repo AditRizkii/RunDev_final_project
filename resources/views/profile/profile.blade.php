@@ -16,7 +16,7 @@
                             {{ Auth::user()->name }}
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                            Hubungan Publik
+                            Mahasiswa
                         </p>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                 <div class="card">
                     <div class="card-header pb-0">
                         <div class="d-flex align-items-center">
-                            <p class="mb-0 text-dark fw-bold fs-5">Edit Profil</p>
-                            <button class="btn btn-primary btn-sm ms-auto">Simpan</button>
+                            <p class="mb-0 text-dark fw-bold fs-5 text-capitalize">Edit Profil</p>
+                            <button class="btn btn-primary btn-sm ms-auto" type="submit">Simpan</button>
                         </div>
                     </div>
                     <div class="card-body">
@@ -66,31 +66,50 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Nama</label>
-                                    <input class="form-control" type="text" value="{{ Auth::user()->name }}">
+                                    <input class="form-control" type="text" value="{{ Auth::user()->name }}" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Email</label>
-                                    <input class="form-control" type="email" value="{{ Auth::user()->email }}">
+                                    <input class="form-control" type="email" value="{{ Auth::user()->email }}" required>
                                 </div>
                             </div>
+                            <div class="col-md-4 my-2 mb-4">
+                                <select class="form-select" aria-label="select">
+                                    @if ($kelamin == "P")
+                                        <option selected value="2">Perempuan</option>
+                                        <option value="1">Laki-Laki</option>
+                                    @else
+                                        <option  value="2">Perempuan</option>
+                                        <option selected value="1">Laki-Laki</option>
+                                    @endif                                   
+                                  </select>
+                            </div>
+                            <div class="w-100"></div> {{--break--}}
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">NPM</label>
-                                    <input class="form-control" type="text" value="{{ Auth::user()->npm }}">
+                                    <input class="form-control" type="text" value="{{ Auth::user()->npm }}" required>
+                                </div>
+                            </div>
+                            <div class="w-100"></div> {{--break--}}
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example-text-input" class="form-control-label">Program Studi</label>
+                                    <input class="form-control" type="text" value="{{ $prodi }}" readonly>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Program Studi</label>
-                                    <input class="form-control" type="text" value="Informatika">
+                                    <label for="example-text-input" class="form-control-label">Fakultas</label>
+                                    <input class="form-control" type="text" value="{{ $fakultas }}" readonly>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Universitas</label>
-                                    <input class="form-control" type="text" value="Universitas Syiah Kuala">
+                                    <input class="form-control" type="text" value="Universitas Syiah Kuala" readonly>
                                 </div>
                             </div>
                         </div>
@@ -136,20 +155,20 @@
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Minat</label>
                                     <input class="form-control" type="text"
-                                        value="Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.">
+                                        value="Ngoding">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Bakat</label>
                                     <input class="form-control" type="text"
-                                        value="Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.">
+                                        value="Menyanyi">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="md-form">
                                     <label for="form7">Tentang Saya</label>
-                                    <textarea id="form7" class="md-textarea form-control" rows="3"></textarea>
+                                    <textarea id="form7" class="md-textarea form-control" rows="3">Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.</textarea>
                                     
                                   </div>
                             </div>

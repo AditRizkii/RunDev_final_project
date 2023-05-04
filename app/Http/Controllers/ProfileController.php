@@ -28,7 +28,7 @@ class ProfileController extends Controller
 
         }
         $user =$request->user();
-        return view('profile.profile', compact('user','fakultas'));
+        return view('profile.profile', compact('user','fakultas','prodi','kelamin'));
     }
 
     /**
