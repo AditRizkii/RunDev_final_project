@@ -1,13 +1,13 @@
 <?php
 
-use App\Http\Controllers\Admin\IndexController;
-use App\Http\Controllers\Admin\PermissionController;
-use App\Http\Controllers\Admin\RoleController;
-use App\Http\Controllers\Admin\UserController;
-use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\IndexController;
+use App\Http\Controllers\Admin\PermissionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +24,6 @@ Route::get('/', function () {
     return view('LandingPage');
 })->name('home');
 
-Route::resource("/student", StudentController::class);
-
 
 
 Route::get('/home', function () {
@@ -33,9 +31,12 @@ Route::get('/home', function () {
 });
 
 Route::middleware(['auth', 'verified'])->group(function(){
-    Route::get('/post',[PostController::class.'index'])->name('post');
-    Route::get('/post/test', [PostController::class, 'show'])->name('post.show');
-    Route::post('/post/test', [PostController::class, 'upload'])->name('post.upload');
+    Route::get('/post',function ()
+    {
+        return view('user.pages.post.create');
+    })->name('post');
+    // Route::get('/post/test', [PostController::class, 'show'])->name('post.show');
+    Route::post('/post/upload', [PostController::class, 'store'])->name('post.upload');
 
     Route::get('/dashboard', function () {
         return view('user.pages.dashboard');
@@ -57,6 +58,7 @@ Route::middleware(['auth', 'verified'])->group(function(){
         return view('user.pages.forum');
     })->name('forum');
 });
+
 
 Route::middleware(['auth', 'verified', 'role:admin'])->name('admin.')->prefix('admin')->group(function(){
     Route::get('/',[IndexController::class,'index'])->name('index');
