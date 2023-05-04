@@ -54,34 +54,15 @@
             </li>
             <li class="nav-item">
                 {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}"> --}}
-                    <a class="nav-link {{ Route::currentRouteName() == 'ormawa' ? 'active' : '' }}" href="{{ route('ormawa') }}">
+                    <a class="nav-link" href="{{ route('dashboard') }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="fa fa-regular fa-users text-primary text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Ormawa Management</span>
+                    <span class="nav-link-text ms-1">Back To User Dashboard</span>
                 </a>
             </li>
-            <li class="nav-item">
-                {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}"> --}}
-                    {{-- <a class="nav-link" href="{{ route('post.show') }}"> --}}
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-regular fa-users text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Add Post</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile-static' ? 'active' : '' }}" href="{{ route('profile-static') }}"> --}}
-                    {{-- <a class="nav-link {{ Route::currentRouteName() == 'post' ? 'active' : '' }}" href="{{ route('post') }}"> --}}
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-duotone fa-trophy text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Post Management</span>
-                </a>
-            </li>
+            
         </ul>
     </div>
 </aside>
