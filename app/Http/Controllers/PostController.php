@@ -10,7 +10,8 @@ use Illuminate\Http\RedirectResponse;
 class PostController extends Controller
 {
     public function index(){
-        return view('user.pages.post.create');
+        $posts=Post::all();
+        return view('user.pages.post', compact('posts'));
     }
 
     public function store(Request $request): RedirectResponse
@@ -24,12 +25,13 @@ class PostController extends Controller
 
         $data = Post::create($request->all());
         if ($request->hasFile('gambar')) {
-            $request->file('gambar')->move('fotoOutput/', $request->file('gambar')->getClientOriginalName());
+            $data->slug=Str::slug($data->nama);
+            $request->file('gambar')->move('assets/img/post/', $request->file('gambar')->getClientOriginalName());
             $data->gambar = $request->file('gambar')->getClientOriginalName();
             $data->save();
         }
         
-        return redirect('student')->with('status', 'Student Addedd!');
+        return back('user.pages.post')->with('message', 'Post Uploaded');
     }
 
 }

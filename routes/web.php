@@ -31,10 +31,7 @@ Route::get('/home', function () {
 });
 
 Route::middleware(['auth', 'verified'])->group(function(){
-    Route::get('/post',function ()
-    {
-        return view('user.pages.post.create');
-    })->name('post');
+    Route::get('/post',[PostController::class,'index'])->name('post');
     // Route::get('/post/test', [PostController::class, 'show'])->name('post.show');
     Route::post('/post/upload', [PostController::class, 'store'])->name('post.upload');
 
