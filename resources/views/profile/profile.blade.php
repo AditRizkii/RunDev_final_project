@@ -77,9 +77,13 @@
                             </div>
                             <div class="col-md-4 my-2 mb-4">
                                 <select class="form-select" aria-label="select">
-                                    <option selected>Jenis Kelamin</option>
-                                    <option value="1">Laki-Laki</option>
-                                    <option value="2">Perempuan</option>
+                                    @if ($kelamin == "P")
+                                        <option selected value="2">Perempuan</option>
+                                        <option value="1">Laki-Laki</option>
+                                    @else
+                                        <option  value="2">Perempuan</option>
+                                        <option selected value="1">Laki-Laki</option>
+                                    @endif                                   
                                   </select>
                             </div>
                             <div class="w-100"></div> {{--break--}}
@@ -93,13 +97,13 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Program Studi</label>
-                                    <input class="form-control" type="text" value="Informatika" readonly>
+                                    <input class="form-control" type="text" value="{{ $prodi }}" readonly>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Fakultas</label>
-                                    <input class="form-control" type="text" value="MIPA" readonly>
+                                    <input class="form-control" type="text" value="{{ $fakultas }}" readonly>
                                 </div>
                             </div>
                             <div class="col-md-4">
