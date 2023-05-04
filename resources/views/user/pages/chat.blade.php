@@ -124,7 +124,16 @@
                     <div class="card-footer">
                         <div class="input-group">
                             <div class="input-group-append">
-                                <span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+                                <span id="share_btn" class="input-group-text attach_btn"><i
+                                        class="fas fa-paperclip"></i></span>
+                            </div>
+                            <div class="action_paper">
+                                <ul>
+                                    <li><i class="fas fa-user-circle"></i> kirim dokumen</li>
+                                    <li><i class="fas fa-users"></i> Kontak</li>
+                                    <li><i class="fas fa-plus"></i>Lokasi</li>
+                                    <li><i class="fas fa-ban"></i> Galeri</li>
+                                </ul>
                             </div>
                             <textarea name="messages" class="form-control type_msg" placeholder="Type your message..."></textarea>
                             <div class="input-group-append">
@@ -146,12 +155,35 @@
                 $('.action_menu').toggle();
             });
         });
+        $(document).ready(function() {
+            $('#share_btn').click(function() {
+                $('.action_paper').toggle();
+            });
+        });
+
+
+        $(document).ready(function() {
+            // Fungsi yang dipanggil saat class ditekan
+            $('.contacts_body li').on('click', function() {
+                // Mengambil nama class yang ditekan
+                var class_name = $(this).find('.d-flex').attr('class').split(' ')[1];
+                // Mengambil gambar dari class yang ditekan
+                var image = $('.' + class_name + ' .user_img').attr('src');
+                // Mengubah gambar pada img_cont_msg sesuai dengan gambar yang ditekan
+                $('.msg_card_body .img_cont_msg img').attr('src', image);
+            });
+        });
+
+
 
         // membuat fungsi kirim pesan 
         // ambil elemen dengan kelas send_btn
         const sendBtn = document.querySelector('.send_btn');
         // ambil elemen dengan kelas msg_card_body
         const msgCardBody = document.querySelector('.msg_card_body');
+
+
+
 
         // tambahkan event listener pada sendBtn
         sendBtn.addEventListener('click', function() {
@@ -450,6 +482,7 @@
             font-size: 20px;
         }
 
+
         .action_menu {
             z-index: 1;
             position: absolute;
@@ -480,6 +513,40 @@
         }
 
         .action_menu ul li:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .action_paper {
+            z-index: 1;
+            position: absolute;
+            padding: 15px 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            top: -250px;
+            left: 15px;
+            display: none;
+
+        }
+
+        .action_paper ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .action_paper ul li {
+            width: 100%;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+        }
+
+        .action_paper ul li i {
+            padding-right: 10px;
+
+        }
+
+        .action_paper ul li:hover {
             cursor: pointer;
             background-color: rgba(0, 0, 0, 0.2);
         }
