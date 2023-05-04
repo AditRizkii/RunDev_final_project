@@ -22,7 +22,6 @@
                               
                           @enderror
                           <div class="d-flex justify-content-center">
-                            <a href="{{ route('admin.permissions.index') }}" class="px-4 mx-4 py-2 mb-2 badge rounded-pill bg-secondary">Back to Permissions Page</a>
                             <button type="submit" class="px-4 py-2 mb-2 badge rounded-pill bg-success border-0">Update</button>
                         </div>
                     </form>
@@ -35,7 +34,7 @@
                             @foreach ($permission->roles as $permission_role)
                             <div>
                                 <span>{{ $permission_role->name }}</span>
-                                <form method="POST" class="d-inline-block" action="{{ route('admin.permissions.roles.remove', [$role->id, $permission_role->id])  }}" onsubmit="return confirm('Apakah Anda Yakin?')">
+                                <form method="POST" class="d-inline-block" action="{{ route('admin.permissions.roles.remove', [$permission->id, $permission_role->id])  }}" onsubmit="return confirm('Apakah Anda Yakin?')">
                                     @csrf
                                     @method('DELETE')
                                     <button class="border-0 bg-transparent" type="submit"><img src="{{ Vite::asset('public/assets/img/min.png') }}" alt="del"></button>
@@ -63,8 +62,7 @@
                                 </div>
                             @enderror
                             <div class="d-flex justify-content-center">
-                                <a href="{{ route('admin.roles.index') }}"
-                                    class="px-4 mx-4 py-2 mb-2 badge rounded-pill bg-secondary">Back to Roles Page</a>
+                                <a href="{{ route('admin.permissions.index') }}" class="px-4 mx-4 py-2 mb-2 badge rounded-pill bg-secondary">Back to Permissions Page</a>
                                 <button type="submit"
                                     class="px-4 py-2 mb-2 badge rounded-pill bg-success border-0">Assign</button>
                             </div>

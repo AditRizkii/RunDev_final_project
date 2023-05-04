@@ -41,8 +41,10 @@
                                         <div class="flex flex-col mb-3">
                                             <input required type="tel" name="npm"
                                                 class="form-control form-control-lg" value="{{ old('npm') }}"
-                                                aria-label="NPM" placeholder="NPM" required
-                                                pattern="[0-9]{12,13}">
+                                                aria-label="NPM" placeholder="NPM" required pattern="[0-9]{12,13}">
+                                            @if (Session::has('message'))
+                                            <p class="text-danger text-xs pt-1"> {{ Session::get('message') }} </p>
+                                            @endif
                                             @error('npm')
                                                 <p class="text-danger text-xs pt-1"> {{ $message }} </p>
                                             @enderror
