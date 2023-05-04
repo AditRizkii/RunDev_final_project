@@ -16,14 +16,21 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#kunkerModal">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        @can('view-post')
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        data-bs-toggle="modal" data-bs-target="#kunkerModal">View</button>
+                                        @endcan
+                                            @can('edit-post')
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
                                             data-bs-toggle="modal" data-bs-target="#edkunkerModal">Edit</button>
+                                            @endcan
+                                        
                                     </div>
+                                    @can('delete-post')
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
+                                    @endcan
                                 </div>
                                 <small class="text-body-secondary">April 14</small>
                             </div>
@@ -157,14 +164,22 @@ _______________________
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
+                                        @can('view-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
                                             data-bs-toggle="modal" data-bs-target="#bukberModal">View</button>
+                                        @endcan
+                                        @can('edit-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#edbukberModal">Edit</button>
+                                        data-bs-toggle="modal" data-bs-target="#edbukberModal">Edit</button>
+                                        @endcan
+                                        
                                     </div>
+                                    @can('delete-post')
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
+                                    @endcan
+                                    
                                 </div>
                                 <small class="text-body-secondary">March 28</small>
                             </div>
@@ -305,14 +320,22 @@ _______________________________________
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
+                                        @can('view-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#takjilModal">View</button>
+                                        data-bs-toggle="modal" data-bs-target="#takjilModal">View</button>
+                                        @endcan
+                                        @can('edit-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#edtakjilModal">Edit</button>
+                                        data-bs-toggle="modal" data-bs-target="#edtakjilModal">Edit</button>
+                                        @endcan
+                                        
                                     </div>
+                                    @can('delete-post')
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
+                                    @endcan
+                                    
                                 </div>
                                 <small class="text-body-secondary">March 25</small>
                             </div>
@@ -464,14 +487,21 @@ ____________________________
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
+                                        @can('view-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
                                             data-bs-toggle="modal" data-bs-target="#makrabModal">View</button>
+                                        @endcan
+                                        @can('edit-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#edmakrabModal">Edit</button>
+                                        data-bs-toggle="modal" data-bs-target="#edmakrabModal">Edit</button>
+                                        @endcan
+                                        
                                     </div>
+                                    @can('delete-post')
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
+                                    @endcan
                                 </div>
                                 <small class="text-body-secondary">March 17</small>
                             </div>
@@ -599,14 +629,22 @@ Thankyouu👋🏻👋🏻
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-evenly">
                                     <div class="btn-group">
+                                        @can('view-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#infdevModal">View</button>
+                                        data-bs-toggle="modal" data-bs-target="#infdevModal">View</button>
+                                        @endcan
+                                        @can('edit-post')
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#edinfdevModal">Edit</button>
+                                        data-bs-toggle="modal" data-bs-target="#edinfdevModal">Edit</button>
+                                        @endcan
+                                        
                                     </div>
+                                    @can('delete-post')
                                     <div class="my-2 mx-4">
                                         <i class="fa fa-duotone fa-trash text-sm"></i>
                                     </div>
+                                    @endcan
+                                    
                                 </div>
                                 <small class="text-body-secondary">March 14</small>
                             </div>
