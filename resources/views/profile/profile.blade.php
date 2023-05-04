@@ -13,7 +13,7 @@
                 <div class="col-auto my-auto">
                     <div class="h-100">
                         <h5 class="mb-1">
-                            Khairul Auni
+                            {{ Auth::user()->name }}
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
                             Hubungan Publik
@@ -56,76 +56,102 @@
                 <div class="card">
                     <div class="card-header pb-0">
                         <div class="d-flex align-items-center">
-                            <p class="mb-0">Edit Profile</p>
-                            <button class="btn btn-primary btn-sm ms-auto">Settings</button>
+                            <p class="mb-0 text-dark fw-bold fs-5">Edit Profil</p>
+                            <button class="btn btn-primary btn-sm ms-auto">Simpan</button>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="text-uppercase text-sm">User Information</p>
+                        <p class="text-uppercase text-dark fw-bolder text-sm">Informasi Akun</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Username</label>
-                                    <input class="form-control" type="text" value="Khairul Auni">
+                                    <label for="example-text-input" class="form-control-label">Nama</label>
+                                    <input class="form-control" type="text" value="{{ Auth::user()->name }}">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Email address</label>
-                                    <input class="form-control" type="email" value="Khairul@example.com">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">First name</label>
-                                    <input class="form-control" type="text" value="Khairul">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Last name</label>
-                                    <input class="form-control" type="text" value="Auni">
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="horizontal dark">
-                        <p class="text-uppercase text-sm">Contact Information</p>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Address</label>
-                                    <input class="form-control" type="text"
-                                        value="jl. T. Nyak Arief Lr. PBB No. Utama No. 06 Darussalam Banda Aceh">
+                                    <label for="example-text-input" class="form-control-label">Email</label>
+                                    <input class="form-control" type="email" value="{{ Auth::user()->email }}">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">City</label>
+                                    <label for="example-text-input" class="form-control-label">NPM</label>
+                                    <input class="form-control" type="text" value="{{ Auth::user()->npm }}">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example-text-input" class="form-control-label">Program Studi</label>
+                                    <input class="form-control" type="text" value="Informatika">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example-text-input" class="form-control-label">Universitas</label>
+                                    <input class="form-control" type="text" value="Universitas Syiah Kuala">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="horizontal dark">
+                        <p class="text-uppercase text-dark fw-bolder text-sm">Informasi kontak</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="example-text-input" class="form-control-label">Alamat</label>
+                                    <textarea name="Alamat" id="alamat" rows="4" class="form-control rounded-5">jl. T. Nyak Arief Lr. PBB No. Utama No. 06 Darussalam Banda Aceh</textarea>
+                                </div>
+                            </div>
+                            <div class="w-100"></div> {{--break--}}
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="example-text-input" class="form-control-label">Provinsi</label>
+                                    <input class="form-control" type="text" value="Nanggroe Aceh Darussalam">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="example-text-input" class="form-control-label">Kabupaten/Kota</label>
                                     <input class="form-control" type="text" value="Banda Aceh">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Country</label>
-                                    <input class="form-control" type="text" value="Indonesia">
+                                    <label for="example-text-input" class="form-control-label">Kecamatan</label>
+                                    <input class="form-control" type="text" value="Darussalam">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Postal code</label>
-                                    <input class="form-control" type="text" value="437300">
+                                    <label for="example-text-input" class="form-control-label">Desa</label>
+                                    <input class="form-control" type="text" value="Tungkob">
                                 </div>
                             </div>
                         </div>
                         <hr class="horizontal dark">
-                        <p class="text-uppercase text-sm">About me</p>
+                        <p class="text-uppercase text-dark fw-bolder text-sm">Tentang Saya</p>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">About me</label>
+                                    <label for="example-text-input" class="form-control-label">Minat</label>
                                     <input class="form-control" type="text"
                                         value="Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.">
                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="example-text-input" class="form-control-label">Bakat</label>
+                                    <input class="form-control" type="text"
+                                        value="Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <label for="form7">Tentang Saya</label>
+                                    <textarea id="form7" class="md-textarea form-control" rows="3"></textarea>
+                                    
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -176,7 +202,7 @@
                         </div>
                         <div class="text-center mt-4">
                             <h5>
-                                 Khairul Auni<span class="font-weight-light">, 17</span>
+                                {{ Auth::user()->name }}<span class="font-weight-light">, 17</span>
                             </h5>
                             <div class="h6 font-weight-300">
                                 <i class="ni location_pin mr-2"></i>Banda Aceh, Indonesia
