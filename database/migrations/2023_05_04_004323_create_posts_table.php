@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('poster');
+            $table->string('ormawa');
             $table->text('content');
             $table->string('gambar');
             $table->timestamps();
