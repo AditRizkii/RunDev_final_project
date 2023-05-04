@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('data_n_p_m_s', function (Blueprint $table) {
             $table->id();
+            $table->string('npm');
+            $table->string('nama');
+            $table->string('kelamin');
+            $table->string('fakultas');
+            $table->string('prodi');
             $table->timestamps();
         });
     }

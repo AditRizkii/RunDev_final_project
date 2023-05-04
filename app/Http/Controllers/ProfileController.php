@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileUpdateRequest;
-use Illuminate\Http\RedirectResponse;
+use App\Models\dataNPM;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\View\View;
+use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\User;
 
 class ProfileController extends Controller
 {
@@ -16,9 +18,17 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
-        return view('profile.profile', [
-            'user' => $request->user(),
-        ]);
+        $users=User::all();
+        $userNpm=Auth::user()->npm;
+        $npm = dataNPM::where('npm', $userNpm)->first();
+        if ($npm != null){
+            $fakultas=$npm->fakultas;
+            $kelamin=$npm->kelamin;
+            $prodi=$npm->prodi;
+
+        }
+        $user =$request->user();
+        return view('profile.profile', compact('user','fakultas'));
     }
 
     /**
