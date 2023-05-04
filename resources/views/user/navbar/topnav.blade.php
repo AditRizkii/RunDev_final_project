@@ -122,6 +122,7 @@
                     </ul>
                 </li>
                 <li>
+                    @auth
                     @role('admin')
                     <div class="dropdown">
                         <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1"
@@ -139,7 +140,7 @@
                             {{ Auth::user()->name }}
                         </div>
                     @endrole
-                    
+                    @endauth
                 </li>
             </ul>
         </div>
