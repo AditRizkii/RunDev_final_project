@@ -33,12 +33,73 @@
                                                     data-bs-toggle="modal" data-bs-target="#kunkerModal{{ $post->id }}"
                                                     data-publisher="{{ $post->poster }}"
                                                     value="{{ $post->id }}">View</button>
+                                                @switch($post->ormawa)
+                                                    @case('HMIF')
+                                                        @can('edit-post-hmif')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
 
-                                                @can('edit-post')
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
-                                                @endcan
+                                                    @case('HIMAFIS')
+                                                        @can('edit-post-himafis')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
+
+                                                    @case('HIMAFAR')
+                                                        @can('edit-post-himafar')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
+
+                                                    @case('HIMASTA')
+                                                        @can('edit-post-himasta')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
+
+                                                    @case('HIMATIKA')
+                                                        @can('edit-post-himatika')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
+
+                                                    @case('HMB')
+                                                        @can('edit-post-hmb')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
+
+                                                    @case('HMMI')
+                                                        @can('edit-post-hmmi')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
+
+                                                    @case('BEM-FMIPA')
+                                                        @can('edit-post-bem-fmipa')
+                                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#edkunkerModal{{ $post->id }}">Edit</button>
+                                                        @endcan
+                                                    @break
+
+                                                    @default
+                                                @endswitch
 
                                             </div>
                                             @can('delete-post')

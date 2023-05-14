@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('ormawa');
             $table->text('content');
             $table->string('gambar');
+            $table->timestamp('publish_at')->nullable();
             $table->timestamps();
         });
     }
