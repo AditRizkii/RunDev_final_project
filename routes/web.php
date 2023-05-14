@@ -32,6 +32,8 @@ Route::get('/home', function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/post', [PostController::class, 'userView'])->name('post');
+    Route::post('/post', [PostController::class, 'userStore'])->name('userStore');
+    Route::put('/post/{post}', [PostController::class, 'userUpdate'])->name('userUpdate');
     // Route::get('/post/test', [PostController::class, 'show'])->name('post.show');
     // Route::post('/post/upload', [PostController::class, 'store'])->name('post.upload');  
 

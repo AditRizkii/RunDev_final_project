@@ -3,12 +3,13 @@
 @section('content')
     @include('admin.layouts.partials.topnav', ['title' => 'Postingan'])
     @can('create-post')
+        <div class="position-absolute z-10 mx-5 mt-3">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#create-post">
+                <span class="badge rounded-pill bg-success">Create post</span>
+            </a>
+        </div>
     @endcan
-    <div class="position-absolute z-10 mx-5 mt-3">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#create-post">
-            <span class="badge rounded-pill bg-success">Create post</span>
-        </a>
-    </div>
+
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
             <div>
@@ -23,16 +24,16 @@
                                 <img src="{{ Vite::asset('public/assets/img/post/' . $post->gambar) }}" class="card-img-top"
                                     style="height:350px; object-fit:cover; object-position:0 68%;" alt="Kunjungan Kerja">
                                 <div class="card-body">
-                                    <p class="card-text">HMIF - USK</p>
+                                    <p class="card-text">{{ $post->ormawa }} - USK</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex justify-content-evenly">
                                             <div class="btn-group">
-                                                @can('view-post')
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary view"
-                                                        data-bs-toggle="modal" data-bs-target="#kunkerModal{{ $post->id }}"
-                                                        data-publisher="{{ $post->poster }}"
-                                                        value="{{ $post->id }}">View</button>
-                                                @endcan
+
+                                                <button type="button" class="btn btn-sm btn-outline-secondary view"
+                                                    data-bs-toggle="modal" data-bs-target="#kunkerModal{{ $post->id }}"
+                                                    data-publisher="{{ $post->poster }}"
+                                                    value="{{ $post->id }}">View</button>
+
                                                 @can('edit-post')
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
                                                         data-bs-toggle="modal"
