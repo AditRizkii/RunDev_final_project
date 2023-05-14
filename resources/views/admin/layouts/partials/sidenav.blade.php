@@ -5,7 +5,7 @@
             aria-hidden="true" id="iconSidenav"></i>
         {{-- <a class="navbar-brand m-0" href="{{ route('home') }}"
             target="_blank"> --}}
-            <a class="navbar-brand m-0" href="{{ route('admin.index') }}">
+        <a class="navbar-brand m-0" href="{{ route('admin.index') }}">
             <img src="{{ Vite::asset('public/assets/img/hehe.png') }}" class="navbar-brand-img h-100" alt="main_logo">
             <span class="ms-1 font-weight-bold">OniiRoom</span>
         </a>
@@ -15,7 +15,7 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 {{-- <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}"> --}}
-                    <a class="nav-link active" href="{{ route('admin.index') }}">
+                <a class="nav-link active" href="{{ route('admin.index') }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
@@ -25,7 +25,8 @@
             </li>
             <li class="nav-item">
                 {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}"> --}}
-                    <a class="nav-link {{ request()->routeIs('admin.roles.index') == 'admin.roles.index' ? 'active' : '' }}" href="{{ route('admin.roles.index') }}">
+                <a class="nav-link {{ request()->routeIs('admin.roles.index') == 'admin.roles.index' ? 'active' : '' }}"
+                    href="{{ route('admin.roles.index') }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="fa fa-solid fa-user-lock text-primary text-sm opacity-10"></i>
@@ -35,7 +36,8 @@
             </li>
             <li class="nav-item">
                 {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}"> --}}
-                    <a class="nav-link {{ request()->routeIs('admin.permissions.index') == 'admin.permissions.index' ? 'active' : '' }}" href="{{ route('admin.permissions.index') }}">
+                <a class="nav-link {{ request()->routeIs('admin.permissions.index') == 'admin.permissions.index' ? 'active' : '' }}"
+                    href="{{ route('admin.permissions.index') }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
@@ -45,16 +47,29 @@
             </li>
             <li class="nav-item">
                 {{-- <a class="nav-link {{ str_contains(request()->url(), 'user-management') == true ? 'active' : '' }}" href="{{ route('page', ['page' => 'user-management']) }}"> --}}
-                    <a class="nav-link {{ request()->routeIs('admin.users.index') == 'admin.users.index' ? 'active' : '' }}" href="{{ route('admin.users.index') }}">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                <a class="nav-link {{ request()->routeIs('admin.users.index') == 'admin.users.index' ? 'active' : '' }}"
+                    href="{{ route('admin.users.index') }}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-bullet-list-67 text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">User Management</span>
                 </a>
             </li>
             <li class="nav-item">
+                {{-- <a class="nav-link {{ str_contains(request()->url(), 'user-management') == true ? 'active' : '' }}" href="{{ route('page', ['page' => 'user-management']) }}"> --}}
+                <a class="nav-link {{ request()->routeIs('admin.posts.index') == 'admin.posts.index' ? 'active' : '' }}"
+                    href="{{ route('admin.posts.index') }}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-bullet-list-67 text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Post</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}"> --}}
-                    <a class="nav-link" href="{{ route('dashboard') }}">
+                <a class="nav-link" href="{{ route('dashboard') }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="fa fa-regular fa-users text-primary text-sm opacity-10"></i>
@@ -62,7 +77,7 @@
                     <span class="nav-link-text ms-1">Back To User Dashboard</span>
                 </a>
             </li>
-            
+
         </ul>
     </div>
 </aside>
