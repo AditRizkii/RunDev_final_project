@@ -29,18 +29,22 @@
                 </div>
                 <div class="mt-2 p-2">
                     <h2 class="fs-2 fw-bold">Role Permissions</h2>
-                    
+
                     <div class="mt-4 p-2">
                         @if ($role->permissions)
                             @foreach ($role->permissions as $role_permission)
-                            <div>
-                                <span>{{ $role_permission->name }}</span>
-                                <form method="POST" class="d-inline-block" action="{{ route('admin.roles.permissions.revoke', [$role->id, $role_permission->id])  }}" onsubmit="return confirm('Apakah Anda Yakin?')">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="border-0 bg-transparent" type="submit"><img src="{{ Vite::asset('public/assets/img/min.png') }}" alt="del"></button>
-                                </form>
-                            </div>
+                                <div>
+                                    <span>{{ $role_permission->name }}</span>
+                                    <form method="POST" class="d-inline-block"
+                                        action="{{ route('admin.roles.permissions.revoke', [$role->id, $role_permission->id]) }}"
+                                        onsubmit="return confirm('Apakah Anda Yakin?')">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="border-0 bg-transparent" type="submit"><img
+                                                src="{{ Vite::asset('public/assets/img/min.png') }}"
+                                                alt="del"></button>
+                                    </form>
+                                </div>
                             @endforeach
                         @endif
                     </div>
@@ -49,13 +53,14 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="permission">Permission Name</label>
-                                <select id="permission" name="permission" autocomplete="permission-name" class="form-select" aria-label="Default select example">
+                                <select id="permission" name="permission" autocomplete="permission-name" class="form-select"
+                                    aria-label="Default select example">
                                     @foreach ($permissions as $permission)
                                         <option value="{{ $permission->name }}">{{ $permission->name }}</option>
                                     @endforeach
-                                  </select>
+                                </select>
                             </div>
-                            @error('name')
+                            @error('permission')
                                 <div class="alert alert-danger d-flex align-items-center text-dark" role="alert">
                                     <div>
                                         {{ $message }}

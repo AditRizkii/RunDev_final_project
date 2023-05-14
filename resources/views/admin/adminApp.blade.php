@@ -43,14 +43,15 @@
             </div>
         @endif
         @include('admin.layouts.partials.sidenav')
+        @include('sweetalert::alert')
         <main class="main-content border-radius-lg">
             @if (Session::has('message'))
-                <div class="alert alert-success alert-dismissible fade show mx-4 mb-4" role="alert" x-data="{ open: true }"
-                    x-show="open">
+                <div class="alert alert-success alert-dismissible fade show mx-4 mb-4" role="alert"
+                    x-data="{ open: true }" x-show="open">
                     {{ Session::get('message') }}
                     <button @click="open=false" type="button" class="btn-close align-middle" data-bs-dismiss="alert"
-                        aria-label="Close"><img src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
-                            alt="close" style="width: 24px; height:24px;"></button>
+                        aria-label="Close"><img src="{{ Vite::asset('public/assets/img/x-solid.svg') }}" alt="close"
+                            style="width: 24px; height:24px;"></button>
                 </div>
             @endif
             @yield('content')

@@ -1,8 +1,7 @@
-@extends('user.app', ['class' => 'g-sidenav-show bg-gray-100'])
+@extends('admin.adminApp', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
-    @include('user.navbar.topnav', ['title' => 'Postingan'])
-    @include('sweetalert::alert')
+    @include('admin.layouts.partials.topnav', ['title' => 'Postingan'])
     @can('create-post')
         <div class="position-absolute z-10 mx-5 mt-3">
             <a href="#" data-bs-toggle="modal" data-bs-target="#create-post">
@@ -13,7 +12,8 @@
 
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
-
+            <div>
+            </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 g-5">
                 @if ($posts != null)
                     @foreach ($posts as $post)
@@ -28,6 +28,7 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex justify-content-evenly">
                                             <div class="btn-group">
+
                                                 <button type="button" class="btn btn-sm btn-outline-secondary view"
                                                     data-bs-toggle="modal" data-bs-target="#kunkerModal{{ $post->id }}"
                                                     data-publisher="{{ $post->poster }}"
@@ -100,7 +101,6 @@
                                                     @default
                                                 @endswitch
 
-
                                             </div>
                                             @can('delete-post')
                                                 <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
@@ -135,9 +135,9 @@
 
 
 
-                                    @include('user.pages.post.edit')
-                                    @include('user.pages.post.view')
-                                    @include('user.pages.post.create')
+                                    @include('admin.posts.edit')
+                                    @include('admin.posts.view')
+                                    @include('admin.posts.create')
                                 </div>
                             </div>
                         </div>
