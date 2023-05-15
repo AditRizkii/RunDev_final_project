@@ -61,7 +61,7 @@
             <li class="nav-item">
                 {{-- <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}"> --}}
                 <a class="nav-link {{ Route::currentRouteName() == 'forum' ? 'active' : '' }}"
-                    href="{{ route('forum') }}">
+                    href="{{ url(config('forum.web.router.prefix')) }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         {{-- <i class="fa-brands fa-rocketchat fa-sm" style="color: #bf78d9;"></i> --}}
