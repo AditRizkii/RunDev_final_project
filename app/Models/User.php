@@ -43,4 +43,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function alamat()
+    {
+        return $this->hasOne('App\Alamat', 'npm', 'id');
+    }
+
+    public function bio()
+    {
+        return $this->hasOne('App\Bio', 'npm', 'id');
+    }
 }
