@@ -2,14 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use App\Models\Alamat;
 use App\Models\dataNPM;
+use App\Models\Regency;
+use App\Models\Village;
+use App\Models\District;
+use App\Models\Province;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ProfileUpdateRequest;
-use App\Models\User;
 
 class ProfileController extends Controller
 {
@@ -27,8 +32,30 @@ class ProfileController extends Controller
             $prodi=$npm->prodi;
 
         }
+
+        $alamat = Alamat::where('npm', Auth::user()->id)->first();
+        if(empty($alamat)){
+            Alamat::create([
+                'npm'=> Auth::user()->id,
+            ]);
+        }
+
+        $provinces = Province::all();
+        $kotas=null;
+        if($alamat->province_id != null){
+            $kotas = Regency::where('province_id', $alamat->province_id)->get();
+        }
+
+        $kecamatans=null;
+        if ($alamat->regency_id) {
+            $kecamatans = District::where('regency_id', $alamat->regency_id)->get();
+        }
+        $desas=null;
+        if ($alamat->district_id) {
+            $desas = Village::where('district_id', $alamat->district_id)->get();
+        }
         $user =$request->user();
-        return view('profile.profile', compact('user','fakultas','prodi','kelamin'));
+        return view('profile.profile', compact('user','fakultas','prodi','kelamin', 'alamat', 'provinces', 'kotas','kecamatans', 'desas'));
     }
 
     /**
