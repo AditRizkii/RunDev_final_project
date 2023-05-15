@@ -7,7 +7,8 @@
             <div class="row gx-4">
                 <div class="col-auto">
                     <div class="avatar avatar-xl position-relative">
-                        <img src="{{ Vite::asset('public/assets/img/team-2.jpg') }}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                        <img src="{{ Vite::asset('public/assets/img/team-2.jpg') }}" alt="profile_image"
+                            class="w-100 border-radius-lg shadow-sm">
                     </div>
                 </div>
                 <div class="col-auto my-auto">
@@ -54,131 +55,275 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header pb-0">
-                        <div class="d-flex align-items-center">
-                            <p class="mb-0 text-dark fw-bold fs-5 text-capitalize">Edit Profil</p>
-                            <button class="btn btn-primary btn-sm ms-auto" type="submit">Simpan</button>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p class="text-uppercase text-dark fw-bolder text-sm">Informasi Akun</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Nama</label>
-                                    <input class="form-control" type="text" value="{{ Auth::user()->name }}" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Email</label>
-                                    <input class="form-control" type="email" value="{{ Auth::user()->email }}" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-2 mb-4">
-                                <select class="form-select" aria-label="select">
-                                    @if ($kelamin == "P")
-                                        <option selected value="2">Perempuan</option>
-                                        <option value="1">Laki-Laki</option>
-                                    @else
-                                        <option  value="2">Perempuan</option>
-                                        <option selected value="1">Laki-Laki</option>
-                                    @endif                                   
-                                  </select>
-                            </div>
-                            <div class="w-100"></div> {{--break--}}
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">NPM</label>
-                                    <input class="form-control" type="text" value="{{ Auth::user()->npm }}" required>
-                                </div>
-                            </div>
-                            <div class="w-100"></div> {{--break--}}
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Program Studi</label>
-                                    <input class="form-control" type="text" value="{{ $prodi }}" readonly>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Fakultas</label>
-                                    <input class="form-control" type="text" value="{{ $fakultas }}" readonly>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Universitas</label>
-                                    <input class="form-control" type="text" value="Universitas Syiah Kuala" readonly>
-                                </div>
+                    <form action="">
+                        <div class="card-header pb-0">
+                            <div class="d-flex align-items-center">
+                                <p class="mb-0 text-dark fw-bold fs-5 text-capitalize">Edit Profil</p>
+                                <button class="btn btn-primary btn-sm ms-auto" type="submit">Simpan</button>
                             </div>
                         </div>
-                        <hr class="horizontal dark">
-                        <p class="text-uppercase text-dark fw-bolder text-sm">Informasi kontak</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Alamat</label>
-                                    <textarea name="Alamat" id="alamat" rows="4" class="form-control rounded-5">jl. T. Nyak Arief Lr. PBB No. Utama No. 06 Darussalam Banda Aceh</textarea>
+                        <div class="card-body">
+                            <p class="text-uppercase text-dark fw-bolder text-sm">Informasi Akun</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Nama</label>
+                                        <input class="form-control" type="text" value="{{ Auth::user()->name }}"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Email</label>
+                                        <input class="form-control" type="email" value="{{ Auth::user()->email }}"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-2 mb-4">
+                                    <select class="form-select" aria-label="select">
+                                        @if ($kelamin == 'P')
+                                            <option selected value="2">Perempuan</option>
+                                            <option value="1">Laki-Laki</option>
+                                        @else
+                                            <option value="2">Perempuan</option>
+                                            <option selected value="1">Laki-Laki</option>
+                                        @endif
+                                    </select>
+                                </div>
+                                <div class="w-100"></div> {{-- break --}}
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">NPM</label>
+                                        <input class="form-control" type="text" value="{{ Auth::user()->npm }}" required>
+                                    </div>
+                                </div>
+                                <div class="w-100"></div> {{-- break --}}
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Program Studi</label>
+                                        <input class="form-control" type="text" value="{{ $prodi }}" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Fakultas</label>
+                                        <input class="form-control" type="text" value="{{ $fakultas }}" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Universitas</label>
+                                        <input class="form-control" type="text" value="Universitas Syiah Kuala"
+                                            readonly>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="w-100"></div> {{--break--}}
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Provinsi</label>
-                                    <input class="form-control" type="text" value="Nanggroe Aceh Darussalam">
+                            <hr class="horizontal dark">
+                            <p class="text-uppercase text-dark fw-bolder text-sm">Informasi kontak</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Alamat</label>
+                                        <textarea name="Alamat" id="alamat" rows="4" class="form-control rounded-5">jl. T. Nyak Arief Lr. PBB No. Utama No. 06 Darussalam Banda Aceh</textarea>
+                                    </div>
+                                </div>
+                                <div class="w-100"></div> {{-- break --}}
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Provinsi</label>
+                                        <select id="provinsi" name="provinsi" class="form-select" aria-label="Default select example">
+                                            @if ($alamat->province == null)
+                                                @foreach ($provinces as $provinsi)
+                                                    <option value="{{ $provinsi->id }}">{{ $provinsi->name }}
+                                                    </option>
+                                                @endforeach
+                                            @else
+                                                <option value="{{ $alamat->province_id }}">{{ $alamat->province }}
+                                                </option>
+                                                @foreach ($provinces as $provinsi)
+                                                    <option value="{{ $provinsi->id }}">{{ $provinsi->name }}
+                                                    </option>
+                                                @endforeach
+                                            @endif
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Kabupaten/Kota</label>
+                                        <select id="kota" name="kota" class="form-select" aria-label="Default select example">
+                                            @if ($alamat->regency == null)
+                                                    @if ($kotas == null)
+                                                        <option value="">Kabupaten/Kota</option>
+                                                    @else
+                                                        @foreach ($kotas as $kota)
+                                                            <option value="{{ $kota->id }}">{{ $kota->name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                @else
+                                                    <option value="{{ $alamat->regency_id }}">{{ $alamat->regency }}
+                                                    </option>
+                                                    @foreach ($kotas as $kota)
+                                                        <option value="{{ $kota->id }}">{{ $kota->name }}</option>
+                                                    @endforeach
+                                                @endif
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Kecamatan</label>
+                                        <select id="kecamatan" name="kecamatan" class="form-select" aria-label="Default select example">
+                                            @if ($alamat->district == null)
+                                                    @if ($kecamatans == null)
+                                                        <option value="">Kecamatan</option>
+                                                    @else
+                                                        @foreach ($kecamatans as $kecamatan)
+                                                            <option value="{{ $kecamatan->id }}">{{ $kecamatan->name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                @else
+                                                    <option value="{{ $alamat->district_id }}">{{ $alamat->district }}
+                                                    </option>
+                                                    @foreach ($kecamatans as $kecamatan)
+                                                        <option value="{{ $kecamatan->id }}">{{ $kecamatan->name }}
+                                                        </option>
+                                                    @endforeach
+                                                @endif
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Desa</label>
+                                        <select id="desa" name="desa" class="form-select" aria-label="Default select example">
+                                            @if ($alamat->village == null)
+                                                    @if ($desas == null)
+                                                        <option value="">Desa</option>
+                                                    @else
+                                                        @foreach ($desas as $desa)
+                                                            <option value="{{ $desa->id }}">{{ $desa->name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                @else
+                                                    <option value="{{ $alamat->village_id }}">{{ $alamat->village }}
+                                                    </option>
+                                                    @foreach ($desas as $desa)
+                                                        <option value="{{ $desa->id }}">{{ $desa->name }}</option>
+                                                    @endforeach
+                                                @endif
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Kabupaten/Kota</label>
-                                    <input class="form-control" type="text" value="Banda Aceh">
+                            <hr class="horizontal dark">
+                            <p class="text-uppercase text-dark fw-bolder text-sm">Tentang Saya</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Minat</label>
+                                        <input class="form-control" type="text" value="Ngoding">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Kecamatan</label>
-                                    <input class="form-control" type="text" value="Darussalam">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Bakat</label>
+                                        <input class="form-control" type="text" value="Menyanyi">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Desa</label>
-                                    <input class="form-control" type="text" value="Tungkob">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <label for="form7">Tentang Saya</label>
+                                        <textarea id="form7" class="md-textarea form-control" rows="3">Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.</textarea>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <hr class="horizontal dark">
-                        <p class="text-uppercase text-dark fw-bolder text-sm">Tentang Saya</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Minat</label>
-                                    <input class="form-control" type="text"
-                                        value="Ngoding">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Bakat</label>
-                                    <input class="form-control" type="text"
-                                        value="Menyanyi">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <label for="form7">Tentang Saya</label>
-                                    <textarea id="form7" class="md-textarea form-control" rows="3">Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.</textarea>
-                                    
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#provinsi").on('change', function() {
+                let id_provinsi = $('#provinsi').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('kota') }}",
+                    data: {
+                        "id_prov": id_provinsi,
+                        '_token': '{{ csrf_token() }}'
+                    },
+                    cache: false,
+
+                    success: function(msg) {
+                        $('#kota').html(msg);
+                        $('#kecamatan').html(
+                            '<option selected disabled>Kecamatan</option>');
+                        $('#desa').html('<option selected disabled>Desa</option>');
+                    },
+
+                    error: function(data) {
+                        console.log('error', data);
+                    },
+                })
+            });
+
+            $("#kota").on('change', function() {
+                let id_kota = $('#kota').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('kecamatan') }}",
+                    data: {
+                        "id_kota": id_kota,
+                        '_token': '{{ csrf_token() }}'
+                    },
+                    cache: false,
+
+                    success: function(msg) {
+                        $('#kecamatan').html(msg);
+                        $('#desa').html('<option selected disabled>Desa</option>');
+                    },
+
+                    error: function(data) {
+                        console.log('error', data);
+                    },
+                })
+            });
+
+            $("#kecamatan").on('change', function() {
+                let id_kecamatan = $('#kecamatan').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('desa') }}",
+                    data: {
+                        "id_kecamatan": id_kecamatan,
+                        '_token': '{{ csrf_token() }}'
+                    },
+                    cache: false,
+
+                    success: function(msg) {
+                        $('#desa').html(msg);
+                    },
+
+                    error: function(data) {
+                        console.log('error', data);
+                    },
+                })
+            });
+        });
+    </script>
             <div class="col-md-4">
                 <div class="card card-profile">
-                    <img src="{{ Vite::asset('public/assets/img/bg-profile.jpg') }}" alt="Image placeholder" class="card-img-top">
+                    <img src="{{ Vite::asset('public/assets/img/bg-profile.jpg') }}" alt="Image placeholder"
+                        class="card-img-top">
                     <div class="row justify-content-center">
                         <div class="col-4 col-lg-4 order-lg-2">
                             <div class="mt-n4 mt-lg-n6 mb-4 mb-lg-0">
@@ -225,17 +370,17 @@
                             </h5>
                             <div class="h6 font-weight-300">
                                 <i class="ni location_pin mr-2"></i>Banda Aceh, Indonesia
-                            <div class="h6 mt-4">
-                                <i class="ni business_briefcase-24 mr-2"></i>Mahasiswa Informatika
-                            </div>
-                            <div>
-                                <i class="ni education_hat mr-2"></i>Universitas Syiah Kuala
+                                <div class="h6 mt-4">
+                                    <i class="ni business_briefcase-24 mr-2"></i>Mahasiswa Informatika
+                                </div>
+                                <div>
+                                    <i class="ni education_hat mr-2"></i>Universitas Syiah Kuala
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @include('admin.layouts.partials.footer')
         </div>
-        @include('admin.layouts.partials.footer')
-    </div>
-@endsection
+    @endsection
