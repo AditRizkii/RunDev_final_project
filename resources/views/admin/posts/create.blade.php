@@ -16,7 +16,8 @@
                                         alt="close"></button>
                             </div>
                             <div>
-                                <form action="{{ route('userStore') }}" method="POST" enctype="multipart/form-data">
+                                <form action="{{ route('admin.posts.store') }}" method="POST"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     <div class="col-md-12">
                                         <label for="nama" class="form-label">Nama</label>
