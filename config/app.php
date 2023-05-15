@@ -186,6 +186,7 @@ return [
          * Package Service Providers...
          */
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+        TeamTeaTime\Forum\ForumServiceProvider::class,
 
 
         /*

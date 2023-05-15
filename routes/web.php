@@ -49,13 +49,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('user.pages.kirim-surat');
     })->name('kirim-surat');
 
-    Route::get('/chat', function () {
-        return view('user.pages.chat');
-    })->name('chat');
-
-    Route::get('/forum', function () {
+    Route::get('/forum2', function () {
         return view('user.pages.forum');
-    })->name('forum');
+    })->name('forum2');
 });
 
 
