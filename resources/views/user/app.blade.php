@@ -30,6 +30,18 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js">
     </script>
+    <!-- Axios (https://github.com/axios/axios) -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Pickr (https://github.com/Simonwep/pickr) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+
+    <!-- Sortable (https://github.com/SortableJS/Sortable) -->
+    <script src="//cdn.jsdelivr.net/npm/sortablejs@1.10.1/Sortable.min.js"></script>
+    <!-- Vue.Draggable (https://github.com/SortableJS/Vue.Draggable) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.23.2/vuedraggable.umd.min.js"></script>
+
 </head>
 
 <body class="{{ $class ?? '' }}">

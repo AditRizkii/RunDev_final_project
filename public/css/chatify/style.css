@@ -101,7 +101,7 @@ body {
 }
 .messenger {
   display: inline-flex;
-  width: 100%;
+  width: 90%;
   height: 100%;
   font-family: sans-serif;
 }
@@ -140,7 +140,7 @@ body {
   padding-top: 15px;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100%;
+  height: 90%;
 }
 .m-header {
   font-weight: 600;
