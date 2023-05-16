@@ -187,6 +187,7 @@ return [
          */
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
         TeamTeaTime\Forum\ForumServiceProvider::class,
+        AzisHapidin\IndoRegion\IndoRegionServiceProvider::class,
 
 
         /*

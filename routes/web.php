@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AlamatController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
@@ -81,6 +82,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::post('/kota', [AlamatController::class, 'getKota'])->name('kota');
+    Route::post('/kecamatan', [AlamatController::class, 'getKecamatan'])->name('kecamatan');
+    Route::post('/desa', [AlamatController::class, 'getDesa'])->name('desa');
 });
 
 require __DIR__ . '/auth.php';
