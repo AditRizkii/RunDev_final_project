@@ -58,8 +58,6 @@ class AlamatController extends Controller
     public function edit(Request $request): View
 
     {
-        
-
         return view('profile.profile', [
             'user' => $request->user(),
             'title' => 'Profile',
