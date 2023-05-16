@@ -56,6 +56,9 @@
             <div class="col-md-8">
                 <div class="card">
                     <form action="">
+                        <form action="{{ route('profile.update', $alamat->id) }}" method="post">
+                            @csrf
+                            @method('patch')
                         <div class="card-header pb-0">
                             <div class="d-flex align-items-center">
                                 <p class="mb-0 text-dark fw-bold fs-5 text-capitalize">Edit Profil</p>
@@ -68,7 +71,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Nama</label>
-                                        <input class="form-control" type="text" value="{{ Auth::user()->name }}"
+                                        <input class="form-control" id="name" name="name" type="text" value="{{ Auth::user()->name }}"
                                             required>
                                     </div>
                                 </div>
@@ -76,17 +79,17 @@
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Email</label>
                                         <input class="form-control" type="email" value="{{ Auth::user()->email }}"
-                                            required>
+                                            readonly>
                                     </div>
                                 </div>
                                 <div class="col-md-4 my-2 mb-4">
                                     <select class="form-select" aria-label="select">
                                         @if ($kelamin == 'P')
-                                            <option selected value="2">Perempuan</option>
+                                            <option selected value="2"  disabled>Perempuan</option>
                                             <option value="1">Laki-Laki</option>
                                         @else
                                             <option value="2">Perempuan</option>
-                                            <option selected value="1">Laki-Laki</option>
+                                            <option selected value="1" disabled>Laki-Laki</option>
                                         @endif
                                     </select>
                                 </div>
@@ -94,7 +97,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">NPM</label>
-                                        <input class="form-control" type="text" value="{{ Auth::user()->npm }}" required>
+                                        <input class="form-control" type="text" value="{{ Auth::user()->npm }}" required readonly>
                                     </div>
                                 </div>
                                 <div class="w-100"></div> {{-- break --}}
@@ -124,7 +127,11 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Alamat</label>
-                                        <textarea name="Alamat" id="alamat" rows="4" class="form-control rounded-5">jl. T. Nyak Arief Lr. PBB No. Utama No. 06 Darussalam Banda Aceh</textarea>
+                                        @if($alamat->address != null)
+                                        <textarea name="address" id="address" rows="4" class="form-control rounded-5">{{ $alamat->address }}</textarea>
+                                        @else
+                                        <textarea name="address" id="address" rows="4" class="form-control rounded-5" placeholder="Masukkan Detail Alamat"></textarea>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="w-100"></div> {{-- break --}}
@@ -225,20 +232,31 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Minat</label>
-                                        <input class="form-control" type="text" value="Ngoding">
+                                        @if($bio->minat != null)
+                                        <input name="minat" id="minat" type="text" class="form-control" value="{{ $bio->minat }}">
+                                        @else
+                                        <input name="minat" id="minat" type="text" class="form-control" placeholder="Tuliskan Minat Anda">
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Bakat</label>
-                                        <input class="form-control" type="text" value="Menyanyi">
+                                        @if($bio->bakat != null)
+                                        <input name="bakat" id="bakat" type="text" class="form-control" value="{{ $bio->bakat }}">
+                                        @else
+                                        <input name="bakat" id="bakat" type="text" class="form-control" placeholder="Tuliskan Bakat Anda">
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="md-form">
-                                        <label for="form7">Tentang Saya</label>
-                                        <textarea id="form7" class="md-textarea form-control" rows="3">Mahasiswa aktif Universitas Syiah Kuala jurusan Informatika.</textarea>
-
+                                        <label for="tentang">Tentang Saya</label>
+                                        @if($bio->tentang != null)
+                                        <textarea name="tentang" id="tentang" rows="3" class="md-textarea form-control">{{ $bio->tentang }}</textarea>
+                                        @else
+                                        <textarea name="tentang" id="tentang" rows="3" class="md-textarea form-control" placeholder="Tuliskan Tentang Anda"></textarea>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
