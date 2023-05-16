@@ -13,13 +13,15 @@
     </div>
     <div class="mb-3">
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="accepts_threads" id="accepts-threads" value="1" {{ old('accepts_threads') ? 'checked' : '' }}>
+            <input class="form-check-input" type="checkbox" name="accepts_threads" id="accepts-threads" value="1"
+                {{ old('accepts_threads') ? 'checked' : '' }}>
             <label class="form-check-label" for="accepts-threads">{{ trans('forum::categories.enable_threads') }}</label>
         </div>
     </div>
     <div class="mb-3">
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="is_private" id="is-private" value="1" {{ old('is_private') ? 'checked' : '' }}>
+            <input class="form-check-input" type="checkbox" name="is_private" id="is-private" value="1"
+                {{ old('is_private') ? 'checked' : '' }}>
             <label class="form-check-label" for="is-private">{{ trans('forum::categories.make_private') }}</label>
         </div>
     </div>
