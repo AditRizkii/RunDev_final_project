@@ -458,7 +458,7 @@ $thread->title])
                                             Gate::allows('pinThreads', $category) ||
                                             Gate::allows('rename', $thread) ||
                                             Gate::allows('moveThreadsFrom', $category))
-                                        <div class="btn-group mb-2" role="group">
+                                        <div class="btn-group mb-2  mt-3" role="group">
                                             @if (!$thread->trashed())
                                                 @can('lockThreads', $category)
                                                     @if ($thread->locked)
