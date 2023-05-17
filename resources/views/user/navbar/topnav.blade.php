@@ -120,7 +120,7 @@
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="/assets/img/team-2.jpg" alt="profil" class="avatar avatar-sm  me-3 ">
+                                    <img src="/assets/img/profil.png" alt="profil" class="avatar avatar-sm  me-3 ">
                                     {{ Auth::user()->name }}
                                 </button>
                                 <ul class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButton1">
