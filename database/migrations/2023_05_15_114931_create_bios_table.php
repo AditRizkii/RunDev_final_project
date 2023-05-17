@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('bios', function (Blueprint $table) {
             $table->id();
             $table->string('npm');
-            $table->string('minat')->nullable;
-            $table->string('bakat')->nullable;
-            $table->text('tentang')->nullable;
+            $table->string('minat')->nullable();
+            $table->string('bakat')->nullable();
+            $table->text('tentang')->nullable();
             $table->timestamps();
         });
     }
