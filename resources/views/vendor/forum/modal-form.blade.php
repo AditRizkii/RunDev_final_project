@@ -15,7 +15,8 @@
                     {{ $slot }}
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-close-modal>{{ trans('forum::general.cancel') }}</button>
+                    <button type="button" class="btn btn-secondary"
+                        data-close-modal>{{ trans('forum::general.cancel') }}</button>
                     {{ $actions }}
                 </div>
             </form>

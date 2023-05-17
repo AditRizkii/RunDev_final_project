@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Admin\PermissionController;
+use App\Http\Controllers\SuratController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,9 +48,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('user.pages.ormawa');
     })->name('ormawa');
 
-    Route::get('/kirim-surat', function () {
-        return view('user.pages.kirim-surat');
-    })->name('kirim-surat');
+    Route::resource('/surat', SuratController::class);
+    Route::get('/surat/suratmasuk/{id}', [SuratController::class, 'kotakMasuk'])->name('surat.masuk');
+    Route::get('/surat/terkirim/{id}', [SuratController::class, 'terkirim'])->name('surat.terkirim');
 
     Route::get('/forum2', function () {
         return view('user.pages.forum');
