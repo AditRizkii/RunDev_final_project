@@ -14,6 +14,7 @@
 | Putri Ulfayani      | 2108107010004 |
 | Sofia      | 2108107010006 |
 | Khairul Auni | 2108107010016 |
+| Tyara Raynasari | 2108107010030 |
 | Teuku Rifal Aulia | 2108107010064 | 
 
 ## About OniRoom
