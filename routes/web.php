@@ -1,14 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BioController;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AlamatController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Admin\PermissionController;
+use App\Http\Controllers\SuratController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,9 +48,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('user.pages.ormawa');
     })->name('ormawa');
 
-    Route::get('/kirim-surat', function () {
-        return view('user.pages.kirim-surat');
-    })->name('kirim-surat');
+    Route::resource('/surat', SuratController::class);
+    Route::get('/surat/suratmasuk/{id}', [SuratController::class, 'kotakMasuk'])->name('surat.masuk');
+    Route::get('/surat/terkirim/{id}', [SuratController::class, 'terkirim'])->name('surat.terkirim');
 
     Route::get('/forum2', function () {
         return view('user.pages.forum');
@@ -81,6 +83,8 @@ Route::middleware(['auth', 'verified', 'role:admin'])->name('admin.')->prefix('a
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::patch('/profile/{id}', [AlamatController::class, 'update'])->name('alamat.update');
+    Route::patch('/profil/{id}', [BioController::class, 'update'])->name('bio.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::post('/kota', [AlamatController::class, 'getKota'])->name('kota');

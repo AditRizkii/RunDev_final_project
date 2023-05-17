@@ -58,8 +58,6 @@ class AlamatController extends Controller
     public function edit(Request $request): View
 
     {
-        
-
         return view('profile.profile', [
             'user' => $request->user(),
             'title' => 'Profile',
@@ -125,7 +123,7 @@ class AlamatController extends Controller
         $kecamatan = District::where('id', $request->kecamatan)->first();
         $desa = Village::where('id', $request->desa)->first();
         
-        $alamat->address = isset($request->address) ? $request->address: $alamat->address;
+        $alamat->alamat = isset($request->address) ? $request->address: $alamat->alamat;
 
         $alamat->province = isset($provinsi->name) ? $provinsi->name: $alamat->province;
         $alamat->province_id = isset($request->provinsi) ? $request->provinsi: $alamat->province_id;

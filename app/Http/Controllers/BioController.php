@@ -74,7 +74,12 @@ class BioController extends Controller
     {
         $bio = Bio::where('id', $id)->where('npm', Auth::user()->id)->first();
 
-        $bio->bio = isset($request->biodata) ? $request->biodata : $bio->bio;
+        // $bio->bio = isset($request->biodata) ? $request->biodata : $bio->bio;
+        // $bio->update();
+
+        $bio->minat = isset($request->minat) ? $request->minat : $bio->minat;
+        $bio->bakat = isset($request->bakat) ? $request->bakat : $bio->bakat;
+        $bio->tentang = isset($request->tentang) ? $request->tentang : $bio->tentang;
         $bio->update();
 
         Alert::success('Bio Updated', 'Success');
