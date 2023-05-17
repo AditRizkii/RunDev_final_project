@@ -4,55 +4,48 @@
     @include('user.navbar.topnav', ['title' => 'Kirim Surat'])
     <div class="card bg-slate-400 mx-4">
         <div class="card-body">
-            <h5 class="card-title"> Form Kirim Surat</h5>
-            <form method="POST">
+            <div class="d-flex justify-content-between">
+                <h5 class="card-title"> Form Kirim Surat</h5>
+                <div>
+                    <a href="{{ route('surat.terkirim', Auth::user()->id) }}" class="badge rounded-pill bg-primary">Surat Terkirim</a>
+                    <a href="{{ route('surat.masuk', Auth::user()->id) }}" class="badge rounded-pill bg-secondary">Surat Masuk</a>
+                </div>
+            </div>
+            <form action="{{ route('surat.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="form-group">
-                    <label for="exampleInputPenerima">Penerima</label>
-                    <input type="penerima" class="form-control" id="exampleInputEmail1" aria-describedby="penerimaHelp"
-                        placeholder="Masukkan Nama Penerima" required>
+                    <label for="id_penerima">Penerima</label>
+                    <select id="id_penerima" name="id_penerima" class="form-select" aria-label="Default select example">
+                        <option selected>Pilih Penerima</option>
+                        @foreach ($users as $user)
+                        @if ($user->name != 'admin' && $user->name != Auth::user()->name)
+                        <option value="{{ $user->id }}">{{ $user->name }}</option>
+                            
+                        @endif
+                        @endforeach
+                      </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputSubjek">Subjek</label>
-                    <input type="subjek" class="form-control" id="exampleInputEmail1" aria-describedby="subjekHelp"
+                    <label for="subject">Subjek</label>
+                    <input id="subject" name="subject" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="subjekHelp"
                         placeholder="Masukkan Subjek" required>
                 </div>
 
                 <div class="form-group">
                     <label for="pesan">Pesan</label>
-                    <textarea class="form-control" id="pesan" rows="3" placeholder="Masukkan Pesan" required></textarea>
+                    <textarea class="form-control" id="pesan" name="pesan" rows="3" placeholder="Masukkan Pesan" required></textarea>
                 </div>
 
-                <label for="exampleInputText">Lampiran</label>
+                <label for="file">Lampiran</label>
                 <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <input id="file" name="file" type="file" class="form-control" id="inputGroupFile02">
                 </div>
 
                 <div>
-                    <button type="submit" class="btn btn-primary my-4" data-bs-toggle="modal" data-bs-target="#kirimsurat">
+                    <button type="submit" class="btn btn-primary my-4">
                         Kirim
                     </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="kirimsurat" tabindex="-1" aria-labelledby="suratModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="shadow mb-5 bg-body rounded">
-                                <div class="modal-body">
-                                    <div class="d-flex justify-content-end">
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"><img src="{{ Vite::asset('public/assets/img/x-solid.svg') }}"
-                                                class="w-80 h-auto" alt="close"></button>
-                                    </div>
-
-                                    <div class="my-0">
-                                        <p class="font">Kirim surat telah berhasil</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </form>
