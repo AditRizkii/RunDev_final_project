@@ -7,7 +7,7 @@
             <div class="row gx-4">
                 <div class="col-auto">
                     <div class="avatar avatar-xl position-relative">
-                        <img src="{{ Vite::asset('public/assets/img/team-2.jpg') }}" alt="profile_image"
+                        <img src="{{ Vite::asset('public/assets/img/profil.png') }}" alt="profile_image"
                             class="w-100 border-radius-lg shadow-sm">
                     </div>
                 </div>
@@ -377,7 +377,7 @@
                         <div class="col-4 col-lg-4 order-lg-2">
                             <div class="mt-n4 mt-lg-n6 mb-4 mb-lg-0">
                                 <a href="javascript:;">
-                                    <img src="{{ Vite::asset('public/assets/img/team-2.jpg') }}"
+                                    <img src="{{ Vite::asset('public/assets/img/profil.png') }}"
                                         class="rounded-circle img-fluid border-2 border-white">
                                 </a>
                             </div>
