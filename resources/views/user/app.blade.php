@@ -73,6 +73,7 @@
             @endif
             @include('user.navbar.sidenav')
             <main class="main-content border-radius-lg">
+                @include('sweetalert::alert')
                 @yield('content')
             </main>
             {{-- @include('components.fixed-plugin') --}}
