@@ -110,12 +110,12 @@ class ProfileController extends Controller
     /**
      * Update the user's profile information.
      */
-    public function update(ProfileUpdateRequest $request, $id_alamat): RedirectResponse
+    public function update(ProfileUpdateRequest $request): RedirectResponse
     {
-        $alamat = Alamat::where('id', $id_alamat)->where('npm', Auth::user()->id)->first();
-        $bio = Bio::where('id', $id_bio)->where('npm', Auth::user()->id)->first();
+        // $alamat = Alamat::where('id', $id_alamat)->where('npm', Auth::user()->id)->first();
+        // $bio = Bio::where('id', $id_bio)->where('npm', Auth::user()->id)->first();
 
-        dd($alamat);
+        // dd($alamat);
 
         // $request->user()->fill($request->validated());
 
@@ -133,33 +133,33 @@ class ProfileController extends Controller
         $user->name = isset($request->name) ? $request->name: $user->name;
         $user->update();
 
-        $provinsi = Province::where('id', $request->provinsi)->first();
-        $kota = Regency::where('id', $request->kota)->first();
-        $kecamatan = District::where('id', $request->kecamatan)->first();
-        $desa = Village::where('id', $request->desa)->first();
+        // $provinsi = Province::where('id', $request->provinsi)->first();
+        // $kota = Regency::where('id', $request->kota)->first();
+        // $kecamatan = District::where('id', $request->kecamatan)->first();
+        // $desa = Village::where('id', $request->desa)->first();
         
-        $alamat->address = isset($request->address) ? $request->address: $alamat->address;
+        // $alamat->address = isset($request->address) ? $request->address: $alamat->address;
 
-        $alamat->province = isset($provinsi->name) ? $provinsi->name: $alamat->province;
-        $alamat->province_id = isset($request->provinsi) ? $request->provinsi: $alamat->province_id;
+        // $alamat->province = isset($provinsi->name) ? $provinsi->name: $alamat->province;
+        // $alamat->province_id = isset($request->provinsi) ? $request->provinsi: $alamat->province_id;
 
-        $alamat->regency = isset($kota->name) ? $kota->name: $alamat->regency;
-        $alamat->regency_id = isset($request->kota) ? $request->kota: $alamat->regency_id;
+        // $alamat->regency = isset($kota->name) ? $kota->name: $alamat->regency;
+        // $alamat->regency_id = isset($request->kota) ? $request->kota: $alamat->regency_id;
 
-        $alamat->district = isset($kecamatan->name) ? $kecamatan->name: $alamat->district;
-        $alamat->district_id = isset($request->kecamatan) ? $request->kecamatan: $alamat->district_id;
+        // $alamat->district = isset($kecamatan->name) ? $kecamatan->name: $alamat->district;
+        // $alamat->district_id = isset($request->kecamatan) ? $request->kecamatan: $alamat->district_id;
 
-        $alamat->village = isset($desa->name) ? $desa->name: $alamat->village;
-        $alamat->village_id = isset($request->desa) ? $request->desa: $alamat->village_id;
-        $alamat->update();
+        // $alamat->village = isset($desa->name) ? $desa->name: $alamat->village;
+        // $alamat->village_id = isset($request->desa) ? $request->desa: $alamat->village_id;
+        // $alamat->update();
 
-        $bio->minat = isset($request->minat) ? $request->minat : $bio->minat;
-        $bio->bakat = isset($request->bakat) ? $request->bakat : $bio->bakat;
-        $bio->tentang = isset($request->tentang) ? $request->tentang : $bio->tentang;
-        $bio->update();
+        // $bio->minat = isset($request->minat) ? $request->minat : $bio->minat;
+        // $bio->bakat = isset($request->bakat) ? $request->bakat : $bio->bakat;
+        // $bio->tentang = isset($request->tentang) ? $request->tentang : $bio->tentang;
+        // $bio->update();
 
-        // return Redirect::route('profile.edit')->with('status', 'profile-updated');
-        return view('profile.ts', compact('alamat'));
+        return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        // return view('profile.ts', compact('alamat'));
     }
 
     /**
