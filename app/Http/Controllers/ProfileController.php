@@ -24,50 +24,50 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
-        $users=User::all();
-        $userNpm=Auth::user()->npm;
+        $users = User::all();
+        $userNpm = Auth::user()->npm;
         $npm = dataNPM::where('npm', $userNpm)->first();
-        if ($npm != null){
-            $fakultas=$npm->fakultas;
-            $kelamin=$npm->kelamin;
-            $prodi=$npm->prodi;
+        if ($npm != null) {
+            $fakultas = $npm->fakultas;
+            $kelamin = $npm->kelamin;
+            $prodi = $npm->prodi;
         }
 
         $alamat = Alamat::where('npm', Auth::user()->id)->first();
-        if(empty($alamat)){
+        if (empty($alamat)) {
             Alamat::create([
-                'npm'=> Auth::user()->id,
+                'npm' => Auth::user()->id,
+            ]);
+            Bio::create([
+                'npm' => Auth::user()->id,
+                'minat' => null,
+                'bakat' => null,
+                'tentang' => null,
             ]);
         }
 
         $provinces = Province::all();
-        $kotas=null;
-        if($alamat->province_id != null){
+        $kotas = null;
+        if ($alamat->province_id != null) {
             $kotas = Regency::where('province_id', $alamat->province_id)->get();
         }
 
-        $kecamatans=null;
+        $kecamatans = null;
         if ($alamat->regency_id) {
             $kecamatans = District::where('regency_id', $alamat->regency_id)->get();
         }
-        $desas=null;
+        $desas = null;
         if ($alamat->district_id) {
             $desas = Village::where('district_id', $alamat->district_id)->get();
         }
 
         $bio = Bio::where('npm', Auth::user()->id)->first();
-        
+
         if (empty($bio)) {
-            Bio::create([
-                'npm' => Auth::user()->id,
-                'minat'=>null,
-                'bakat'=>null,
-                'tentang'=>null,
-            ]);
         }
 
-        $user =$request->user();
-        return view('profile.profile', compact('user','fakultas','prodi','kelamin', 'alamat', 'provinces', 'kotas','kecamatans', 'desas','bio'));
+        $user = $request->user();
+        return view('profile.profile', compact('user', 'fakultas', 'prodi', 'kelamin', 'alamat', 'provinces', 'kotas', 'kecamatans', 'desas', 'bio'));
     }
 
     public function getKota(request $request)
@@ -129,15 +129,15 @@ class ProfileController extends Controller
         //     $request->user()->email_verified_at = null;
         // }
 
-        $user = User::where('id',Auth::user()->id)->first();
-        $user->name = isset($request->name) ? $request->name: $user->name;
+        $user = User::where('id', Auth::user()->id)->first();
+        $user->name = isset($request->name) ? $request->name : $user->name;
         $user->update();
 
         // $provinsi = Province::where('id', $request->provinsi)->first();
         // $kota = Regency::where('id', $request->kota)->first();
         // $kecamatan = District::where('id', $request->kecamatan)->first();
         // $desa = Village::where('id', $request->desa)->first();
-        
+
         // $alamat->address = isset($request->address) ? $request->address: $alamat->address;
 
         // $alamat->province = isset($provinsi->name) ? $provinsi->name: $alamat->province;
