@@ -102,20 +102,125 @@
                                                 @endswitch
 
                                             </div>
-                                            @can('delete-post')
-                                                <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
-                                                    id="delete-post{{ $post->id }}">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <div class="my-2 mx-4"
-                                                        onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
-                                                        <i class="fa fa-duotone fa-trash text-sm"></i>
-                                                    </div>
-                                                </form>
-                                            @endcan
+                                            @switch($post->ormawa)
+                                                    @case('HMIF')
+                                                        @can('delete-post-hmif')
+                                                        <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                            id="delete-post{{ $post->id }}">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <div class="my-2 mx-4"
+                                                                onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                                <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                            </div>
+                                                        </form>
+                                                        @endcan
+                                                    @break
+
+                                                    @case('HIMAFIS')
+                                                    @can('delete-post-himafis')
+                                                    <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                        id="delete-post{{ $post->id }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <div class="my-2 mx-4"
+                                                            onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                            <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                        </div>
+                                                    </form>
+                                                    @endcan
+                                                    @break
+
+                                                    @case('HIMAFAR')
+                                                    @can('delete-post-himafar')
+                                                    <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                        id="delete-post{{ $post->id }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <div class="my-2 mx-4"
+                                                            onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                            <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                        </div>
+                                                    </form>
+                                                    @endcan
+                                                    @break
+
+                                                    @case('HIMASTA')
+                                                    @can('delete-post-himasta')
+                                                    <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                        id="delete-post{{ $post->id }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <div class="my-2 mx-4"
+                                                            onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                            <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                        </div>
+                                                    </form>
+                                                    @endcan
+                                                    @break
+
+                                                    @case('HIMATIKA')
+                                                    @can('delete-post-himatika')
+                                                    <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                        id="delete-post{{ $post->id }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <div class="my-2 mx-4"
+                                                            onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                            <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                        </div>
+                                                    </form>
+                                                    @endcan
+                                                    @break
+
+                                                    @case('HMB')
+                                                    @can('delete-post-hmb')
+                                                    <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                        id="delete-post{{ $post->id }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <div class="my-2 mx-4"
+                                                            onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                            <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                        </div>
+                                                    </form>
+                                                    @endcan
+                                                    @break
+
+                                                    @case('HMMI')
+                                                    @can('delete-post-hmmi')
+                                                    <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                        id="delete-post{{ $post->id }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <div class="my-2 mx-4"
+                                                            onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                            <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                        </div>
+                                                    </form>
+                                                    @endcan
+                                                    @break
+
+                                                    @case('BEM-FMIPA')
+                                                    @can('delete-post-bem-fmipa')
+                                                    <form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST"
+                                                        id="delete-post{{ $post->id }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <div class="my-2 mx-4"
+                                                            onclick="event.preventDefault(); document.getElementById('delete-post{{ $post->id }}').submit();">
+                                                            <i class="fa fa-duotone fa-trash text-sm"></i>
+                                                        </div>
+                                                    </form>
+                                                    @endcan
+                                                    @break
+
+                                                    @default
+                                                @endswitch
                                         </div>
                                         <small class="text-body-secondary">April 14</small>
                                     </div>
+
                                     {{-- <script>
                                         $(document).on('click', '.view', function() {
                                             // var url = "domain.com/yoururl";
@@ -137,7 +242,6 @@
 
                                     @include('admin.posts.edit')
                                     @include('admin.posts.view')
-                                    @include('admin.posts.create')
                                 </div>
                             </div>
                         </div>
@@ -146,6 +250,7 @@
             </div>
         </div>
     </div>
+    @include('admin.posts.create')
 
     <style>
         #like {

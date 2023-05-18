@@ -146,6 +146,8 @@ class AlamatController extends Controller
 
         // $request->user()->save();
         return Redirect::route('profile.edit');
+        Alert::success('Berhasil', 'Alamat Updated');
+
 
     }
 

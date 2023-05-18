@@ -1,6 +1,8 @@
 @extends('user.app', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
+@include('sweetalert::alert')
+
     @include('user.navbar.topnav', ['title' => 'Profile'])
     <div class=" card shadow-lg mx-4 card-profile-top">
         <div class="card-body p-3">
@@ -137,8 +139,8 @@
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Alamat</label>
                                         @if ($alamat->alamat == null)
-                                        <textarea name="address" id="address" rows="4" class="form-control rounded-5"
-                                        placeholder="Masukkan Detail Alamat"></textarea>
+                                            <textarea name="address" id="address" rows="4" class="form-control rounded-5"
+                                                placeholder="Masukkan Detail Alamat"></textarea>
                                         @else
                                             <textarea name="address" id="address" rows="4" class="form-control rounded-5">{{ $alamat->alamat }}</textarea>
                                         @endif
@@ -249,49 +251,49 @@
                         <form action="{{ route('bio.update', $bio->id) }}" method="POST">
                             @csrf
                             @method('PATCH')
-                        <p class="text-uppercase text-dark fw-bolder text-sm">Tentang Saya</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Minat</label>
-                                    @if ($bio->minat != null)
-                                        <input name="minat" id="minat" type="text" class="form-control"
-                                            value="{{ $bio->minat }}">
-                                    @else
-                                        <input name="minat" id="minat" type="text" class="form-control"
-                                            placeholder="Tuliskan Minat Anda">
-                                    @endif
+                            <p class="text-uppercase text-dark fw-bolder text-sm">Tentang Saya</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Minat</label>
+                                        @if ($bio->minat != null)
+                                            <input name="minat" id="minat" type="text" class="form-control"
+                                                value="{{ $bio->minat }}">
+                                        @else
+                                            <input name="minat" id="minat" type="text" class="form-control"
+                                                placeholder="Tuliskan Minat Anda">
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Bakat</label>
+                                        @if ($bio->bakat != null)
+                                            <input name="bakat" id="bakat" type="text" class="form-control"
+                                                value="{{ $bio->bakat }}">
+                                        @else
+                                            <input name="bakat" id="bakat" type="text" class="form-control"
+                                                placeholder="Tuliskan Bakat Anda">
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <label for="tentang">Tentang Saya</label>
+                                        @if ($bio->tentang != null)
+                                            <textarea name="tentang" id="tentang" rows="3" class="md-textarea form-control">{{ $bio->tentang }}</textarea>
+                                        @else
+                                            <textarea name="tentang" id="tentang" rows="3" class="md-textarea form-control"
+                                                placeholder="Tuliskan Tentang Anda"></textarea>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-sm ms-auto w-20 mr-20"
+                                        type="submit">Simpan</button>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Bakat</label>
-                                    @if ($bio->bakat != null)
-                                        <input name="bakat" id="bakat" type="text" class="form-control"
-                                            value="{{ $bio->bakat }}">
-                                    @else
-                                        <input name="bakat" id="bakat" type="text" class="form-control"
-                                            placeholder="Tuliskan Bakat Anda">
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <label for="tentang">Tentang Saya</label>
-                                    @if ($bio->tentang != null)
-                                        <textarea name="tentang" id="tentang" rows="3" class="md-textarea form-control">{{ $bio->tentang }}</textarea>
-                                    @else
-                                        <textarea name="tentang" id="tentang" rows="3" class="md-textarea form-control"
-                                            placeholder="Tuliskan Tentang Anda"></textarea>
-                                    @endif
-                                </div>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-sm ms-auto w-20 mr-20"
-                                    type="submit">Simpan</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
                     </div>
                 </div>
             </div>
