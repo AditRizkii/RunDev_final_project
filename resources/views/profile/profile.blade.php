@@ -1,6 +1,8 @@
 @extends('user.app', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
+@include('sweetalert::alert')
+
     @include('user.navbar.topnav', ['title' => 'Profile'])
     <div class=" card shadow-lg mx-4 card-profile-top">
         <div class="card-body p-3">

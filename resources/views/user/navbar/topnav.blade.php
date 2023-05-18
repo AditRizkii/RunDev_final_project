@@ -130,7 +130,7 @@
                         @else
                             <div
                                 class="text-white font-weight-bold d-flex flex-row row-gap-0 justify-content-center align-items-center">
-                                <img src="/assets/img/team-2.jpg" alt="profil" class="avatar avatar-sm  me-1 ">
+                                <img src="/assets/img/profil.png" alt="profil" class="avatar avatar-sm  me-1 ">
                                 {{ Auth::user()->name }}
                             </div>
                         @endrole
