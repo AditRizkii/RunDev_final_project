@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ProfileUpdateRequest;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ProfileController extends Controller
 {
@@ -157,6 +158,7 @@ class ProfileController extends Controller
         // $bio->bakat = isset($request->bakat) ? $request->bakat : $bio->bakat;
         // $bio->tentang = isset($request->tentang) ? $request->tentang : $bio->tentang;
         // $bio->update();
+        Alert::success('Berhasil', 'Profile Updated');
 
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
         // return view('profile.ts', compact('alamat'));
@@ -179,7 +181,7 @@ class ProfileController extends Controller
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-
+        
         return Redirect::to('/');
     }
 }
